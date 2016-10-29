@@ -1,0 +1,190 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$sm-btn-menus-name: 'sm-btn_menus';
+$sm-btn-menus-x: 0px;
+$sm-btn-menus-y: 26px;
+$sm-btn-menus-offset-x: 0px;
+$sm-btn-menus-offset-y: -26px;
+$sm-btn-menus-width: 34px;
+$sm-btn-menus-height: 44px;
+$sm-btn-menus-total-width: 93px;
+$sm-btn-menus-total-height: 70px;
+$sm-btn-menus-image: '../images/mobile/sprites.png';
+$sm-btn-menus: (0px, 26px, 0px, -26px, 34px, 44px, 93px, 70px, '../images/mobile/sprites.png', 'sm-btn_menus', );
+$sm-logo-name: 'sm-logo';
+$sm-logo-x: 0px;
+$sm-logo-y: 0px;
+$sm-logo-offset-x: 0px;
+$sm-logo-offset-y: 0px;
+$sm-logo-width: 93px;
+$sm-logo-height: 20px;
+$sm-logo-total-width: 93px;
+$sm-logo-total-height: 70px;
+$sm-logo-image: '../images/mobile/sprites.png';
+$sm-logo: (0px, 0px, 0px, 0px, 93px, 20px, 93px, 70px, '../images/mobile/sprites.png', 'sm-logo', );
+$sm-btn-menus-2x-name: 'sm-btn_menus@2x';
+$sm-btn-menus-2x-x: 0px;
+$sm-btn-menus-2x-y: 52px;
+$sm-btn-menus-2x-offset-x: 0px;
+$sm-btn-menus-2x-offset-y: -52px;
+$sm-btn-menus-2x-width: 68px;
+$sm-btn-menus-2x-height: 88px;
+$sm-btn-menus-2x-total-width: 186px;
+$sm-btn-menus-2x-total-height: 140px;
+$sm-btn-menus-2x-image: '../images/mobile/sprites@2x.png';
+$sm-btn-menus-2x: (0px, 52px, 0px, -52px, 68px, 88px, 186px, 140px, '../images/mobile/sprites@2x.png', 'sm-btn_menus@2x', );
+$sm-logo-2x-name: 'sm-logo@2x';
+$sm-logo-2x-x: 0px;
+$sm-logo-2x-y: 0px;
+$sm-logo-2x-offset-x: 0px;
+$sm-logo-2x-offset-y: 0px;
+$sm-logo-2x-width: 186px;
+$sm-logo-2x-height: 40px;
+$sm-logo-2x-total-width: 186px;
+$sm-logo-2x-total-height: 140px;
+$sm-logo-2x-image: '../images/mobile/sprites@2x.png';
+$sm-logo-2x: (0px, 0px, 0px, 0px, 186px, 40px, 186px, 140px, '../images/mobile/sprites@2x.png', 'sm-logo@2x', );
+$spritesheet-width: 93px;
+$spritesheet-height: 70px;
+$spritesheet-image: '../images/mobile/sprites.png';
+$spritesheet-sprites: ($sm-btn-menus, $sm-logo, );
+$spritesheet: (93px, 70px, '../images/mobile/sprites.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 186px;
+$retina-spritesheet-height: 140px;
+$retina-spritesheet-image: '../images/mobile/sprites@2x.png';
+$retina-spritesheet-sprites: ($sm-btn-menus-2x, $sm-logo-2x, );
+$retina-spritesheet: (186px, 140px, '../images/mobile/sprites@2x.png', $retina-spritesheet-sprites, );
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+$sm-btn-menus-group-name: 'sm-btn_menus';
+$sm-btn-menus-group: ('sm-btn_menus', $sm-btn-menus, $sm-btn-menus-2x, );
+$sm-logo-group-name: 'sm-logo';
+$sm-logo-group: ('sm-logo', $sm-logo, $sm-logo-2x, );
+$retina-groups: ($sm-btn-menus-group, $sm-logo-group, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "gulp-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "/Volumes/DataHD/Dropbox/repository/gulp-template"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-awspublish": "^3.3.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-connect": "^3.2.2",
+    "gulp-csscomb": "^3.0.7",
+    "gulp-csso": "^1.1.0",
+    "gulp-file-include": "^0.13.7",
+    "gulp-iconfont": "^8.0.0",
+    "gulp-iconfont-css": "^2.1.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-newer": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-watch": "^4.3.5",
+    "gulp.spritesmith": "^6.2.1",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0",
+    "merge-stream": "^1.0.0",
+    "run-sequence": "^1.2.2",
+    "vinyl-buffer": "^1.0.0"
+  }
+}

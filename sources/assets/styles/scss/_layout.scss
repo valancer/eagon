@@ -1,0 +1,71 @@
+
+
+body { background-color: #fff; }
+
+
+/* header */
+.layout-header { margin: 0 12px; border-bottom: 1px solid #000; background-color: #fff;
+	.btn-menus { text-indent: -9999px; }
+	.logo-eagon { float: right; margin-top: 10px; text-indent: -9999px; }
+
+	@include mobile { height: 44px; 
+		.btn-menus { @include retina-sprite($sm-btn-menus-group); }
+		.logo-eagon { @include retina-sprite($sm-logo-group); }
+	}
+
+	@include tablet { margin: 0 24px;
+
+	}
+
+	@include desktop { margin: 0 100px; height: 66px;
+		.btn-menus { margin-top: 22px; @include sprite($sd-btn-menus); }
+		.logo-eagon { margin-top: 20px; @include sprite($sd-logo); }
+	}
+}
+
+
+/* contents */
+.layout-contents { margin: 0 12px;
+	.page-title { display: none; }
+
+	@include desktop { margin: 0 24px; }	
+}
+
+
+/* footer */
+.layout-footer { overflow: hidden; padding: 12px 12px 37px; min-height: 200px; background-color: #f8f8f8; 
+	.eagon-haus { font-family: $font-special-stack; font-size: 0.750rem; color: #231f20; letter-spacing: 0.3rem; }
+	.contents { overflow: hidden; font-size: 0.438rem; color: #231f20; line-height: 1.214em; 
+		.description { margin-top: 11px; }
+		.list-local-business {
+			> li { margin-top: 15px;
+				.name { font-weight: 700; }
+			}
+		}
+	}
+
+	@include tablet { padding: 0 24px 29px 24px; min-height: 265px;
+		.eagon-haus { float: left; margin-top: 15px; font-size: 0.938rem; }
+		.contents { float: right; margin-top: 0; width: 290px; font-size: 0.500rem; 
+			.description { margin-top: 17px; line-height: 1.313em; }
+			.list-local-business {
+				> li { margin-top: 10px; }
+				* { line-height: 1.313em; }
+			}
+		}
+	}
+
+	@include desktop { padding: 0;
+		.layout-footer-inner { overflow: hidden; margin: 0 auto; padding: 10px 100px 118px; max-width: 1364px; }
+		.eagon-haus { float: left; font-size: 1.500rem; }
+		.contents { float: right; margin-top: 0px; width: 815px; font-size: 0.750rem;
+			.description { float: left; margin-top: 4px; width: 520px; line-height: 1.167rem; }
+			.list-local-business { float: right; width: 250px;
+				> li { margin-top: 3px;
+					+ li { margin-top: 17px; }
+				}
+				* { line-height: 1.500em; }
+			}
+		}
+	}
+}

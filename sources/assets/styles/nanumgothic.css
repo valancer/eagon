@@ -1,0 +1,13 @@
+/* 
+ * Nanum Gothic Web Fonts
+ * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com) 
+ */
+
+@font-face { font-family: 'Nanum Gothic'; font-weight: 400; font-style: normal; src: url(/assets/fonts/eot/NanumGothic-Regular.eot); src: url(/assets/fonts/eot/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+	url(/assets/fonts/woff/NanumGothic-Regular.woff2) format('woff2'),
+	url(/assets/fonts/woff/NanumGothic-Regular.woff) format('woff'),
+	url(/assets/fonts/ttf/NanumGothic-Regular.ttf) format('truetype'); }
+@font-face { font-family: 'Nanum Gothic'; font-weight: 700; font-style: normal; src: url(/assets/fonts/eot/NanumGothic-Bold.eot); src: url(/assets/fonts/eot/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+	url(/assets/fonts/woff/NanumGothic-Bold.woff2) format('woff2'),
+	url(/assets/fonts/woff/NanumGothic-Bold.woff) format('woff'),
+	url(/assets/fonts/ttf/NanumGothic-Bold.ttf) format('truetype'); }

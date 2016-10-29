@@ -1,0 +1,435 @@
+@import url(nanumgothic.css);
+@import url(univers.css);
+/**
+ * variable
+ */
+body {
+  background-color: #fff; }
+
+/* Common Style */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, font, img, ins, q, s, samp, strike, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+  line-height: 1.3em;
+  border: 0 none; }
+
+body {
+  position: relative;
+  min-height: 320px;
+  margin: 0 auto;
+  font-size: 100%;
+  line-height: 1.3em;
+  font-family: "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
+  -ms-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+header, h1 {
+  font-size: 100%; }
+
+html, body {
+  height: 100%; }
+
+caption, legend {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+caption {
+  display: none; }
+
+img {
+  border: none;
+  vertical-align: top;
+  width: 100%; }
+
+select, input {
+  vertical-align: top; }
+
+hr {
+  display: none;
+  border: 0 none; }
+
+ol, ul, ul li {
+  list-style: none; }
+
+em {
+  font-style: normal; }
+
+menu li {
+  list-style: none; }
+
+address {
+  display: inline;
+  font-style: normal; }
+
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  border: 0px;
+  background-color: transparent; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, textarea, keygen, select, button {
+  font-family: "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif; }
+
+strong {
+  font-weight: normal; }
+
+dfn {
+  font-style: normal; }
+
+/* link Style */
+a:link, a:visited, a:active, a:focus {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.is-hidden {
+  display: none !important; }
+
+.visible-hidden {
+  visibility: hidden !important; }
+
+.clear {
+  clear: both; }
+
+.txt-center {
+  text-align: center !important; }
+
+.inline-block {
+  display: inline-block;
+  vertical-align: middle; }
+
+/* forms */
+fieldset {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+input[type=submit],
+input[type=search] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  border: 0px; }
+
+input:focus,
+button:focus,
+textarea:focus,
+select,
+div {
+  outline: 0; }
+
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+/* media queries */
+/* phone & table */
+/* z-index */
+/* retina */
+/* aspect ratio */
+/**
+ * import
+ */
+/** layout **/
+body {
+  background-color: #fff; }
+
+/* header */
+.layout-header {
+  margin: 0 12px;
+  border-bottom: 1px solid #000;
+  background-color: #fff; }
+  .layout-header .btn-menus {
+    text-indent: -9999px; }
+  .layout-header .logo-eagon {
+    float: right;
+    margin-top: 10px;
+    text-indent: -9999px; }
+  @media only screen and (min-width: 320px) and (max-width: 1024px) {
+    .layout-header {
+      height: 44px; }
+      .layout-header .btn-menus {
+        background-image: url(../images/mobile/sprites.png);
+        background-position: 0px -26px;
+        width: 34px;
+        height: 44px; } }
+    @media only screen and (min-width: 320px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 1024px) and (min-resolution: 192dpi) {
+      .layout-header .btn-menus {
+        background-image: url(../images/mobile/sprites@2x.png);
+        background-size: 93px 70px; } }
+  @media only screen and (min-width: 320px) and (max-width: 1024px) {
+      .layout-header .logo-eagon {
+        background-image: url(../images/mobile/sprites.png);
+        background-position: 0px 0px;
+        width: 93px;
+        height: 20px; } }
+    @media only screen and (min-width: 320px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 1024px) and (min-resolution: 192dpi) {
+      .layout-header .logo-eagon {
+        background-image: url(../images/mobile/sprites@2x.png);
+        background-size: 93px 70px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .layout-header {
+      margin: 0 24px; } }
+  @media only screen and (min-width: 1025px) {
+    .layout-header {
+      margin: 0 100px;
+      height: 66px; }
+      .layout-header .btn-menus {
+        margin-top: 22px;
+        background-image: url(../images/desktop/sprites.png);
+        background-position: 0px -36px;
+        width: 41px;
+        height: 26px; }
+      .layout-header .logo-eagon {
+        margin-top: 20px;
+        background-image: url(../images/desktop/sprites.png);
+        background-position: 0px 0px;
+        width: 143px;
+        height: 30px; } }
+
+/* contents */
+.layout-contents {
+  margin: 0 12px; }
+  .layout-contents .page-title {
+    display: none; }
+  @media only screen and (min-width: 1025px) {
+    .layout-contents {
+      margin: 0 24px; } }
+
+/* footer */
+.layout-footer {
+  overflow: hidden;
+  padding: 12px 12px 37px;
+  min-height: 200px;
+  background-color: #f8f8f8; }
+  .layout-footer .eagon-haus {
+    font-family: "Univers LT W01 45 Light", "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
+    font-size: 0.750rem;
+    color: #231f20;
+    letter-spacing: 0.3rem; }
+  .layout-footer .contents {
+    overflow: hidden;
+    font-size: 0.438rem;
+    color: #231f20;
+    line-height: 1.214em; }
+    .layout-footer .contents .description {
+      margin-top: 11px; }
+    .layout-footer .contents .list-local-business > li {
+      margin-top: 15px; }
+      .layout-footer .contents .list-local-business > li .name {
+        font-weight: 700; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .layout-footer {
+      padding: 0 24px 29px 24px;
+      min-height: 265px; }
+      .layout-footer .eagon-haus {
+        float: left;
+        margin-top: 15px;
+        font-size: 0.938rem; }
+      .layout-footer .contents {
+        float: right;
+        margin-top: 0;
+        width: 290px;
+        font-size: 0.500rem; }
+        .layout-footer .contents .description {
+          margin-top: 17px;
+          line-height: 1.313em; }
+        .layout-footer .contents .list-local-business > li {
+          margin-top: 10px; }
+        .layout-footer .contents .list-local-business * {
+          line-height: 1.313em; } }
+  @media only screen and (min-width: 1025px) {
+    .layout-footer {
+      padding: 0; }
+      .layout-footer .layout-footer-inner {
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 10px 100px 118px;
+        max-width: 1364px; }
+      .layout-footer .eagon-haus {
+        float: left;
+        font-size: 1.500rem; }
+      .layout-footer .contents {
+        float: right;
+        margin-top: 0px;
+        width: 815px;
+        font-size: 0.750rem; }
+        .layout-footer .contents .description {
+          float: left;
+          margin-top: 4px;
+          width: 520px;
+          line-height: 1.167rem; }
+        .layout-footer .contents .list-local-business {
+          float: right;
+          width: 250px; }
+          .layout-footer .contents .list-local-business > li {
+            margin-top: 3px; }
+            .layout-footer .contents .list-local-business > li + li {
+              margin-top: 17px; }
+          .layout-footer .contents .list-local-business * {
+            line-height: 1.500em; } }
+
+.list-product {
+  overflow: hidden; }
+  .list-product > li {
+    float: left;
+    padding-top: 10px;
+    padding-left: 4.054054054054%;
+    width: 47.972972972973%; }
+    .list-product > li figcaption {
+      padding-top: 3px;
+      font-size: 0.563rem;
+      color: #231f20; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .list-product > li:nth-child(2n+1) {
+      padding-left: 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .list-product > li {
+      padding-top: 30px;
+      padding-left: 2.777777777778%;
+      width: 31.388888888889%; }
+      .list-product > li:nth-child(3n+1) {
+        padding-left: 0; }
+      .list-product > li figcaption {
+        padding-top: 9px;
+        font-size: 0.750rem; } }
+  @media only screen and (min-width: 1025px) {
+    .list-product > li {
+      padding-top: 60px;
+      padding-left: 1.466275659824%;
+      width: 23.900293255132%; }
+      .list-product > li:nth-child(4n+1) {
+        padding-left: 0; }
+      .list-product > li figcaption {
+        padding-top: 21px;
+        font-size: 1.000rem; } }
