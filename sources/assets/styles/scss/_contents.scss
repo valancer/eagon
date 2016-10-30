@@ -1,7 +1,7 @@
 
-.list-product { overflow: hidden;
-	> li { float: left; padding-top: 10px; padding-left: 4.054054054054%; width: 47.972972972973%;
-		figcaption { padding-top: 3px; font-size: 0.563rem; color: #231f20; }
+.list-product { overflow: hidden; margin-top: 12px;
+	> li { float: left; padding-top: 14px; padding-left: 4.054054054054%; width: 47.972972972973%;
+		figcaption { padding-top: 4px; font-size: 0.500rem; color: #231f20; }
 	}
 
 	@include phone {
@@ -10,19 +10,19 @@
 		}
 	}
 
-	@include tablet {
-		> li { padding-top: 30px; padding-left: 2.777777777778%; width: 31.388888888889%;
+	@include tablet { margin-top: 26px;
+		> li { padding-top: 20px; padding-left: 2.777777777778%; width: 31.388888888889%;
 			&:nth-child(3n+1) { padding-left: 0; }
 
-			figcaption { padding-top: 9px; font-size: 0.750rem; }
+			figcaption { padding-top: 3px; font-size: 0.750rem; }
 		}
 	}
 
-	@include desktop {
+	@include desktop { margin-top: 33px;
 		> li { padding-top: 60px; padding-left: 1.466275659824%; width: 23.900293255132%;
 			&:nth-child(4n+1) { padding-left: 0; }
 
-			figcaption { padding-top: 21px; font-size: 1.000rem; }
+			figcaption { padding-top: 18px; font-size: 1.000rem; }
 		}
 	}
 }

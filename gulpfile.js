@@ -217,7 +217,6 @@ gulp.task('check', function() {
 gulp.task('watch', function () {
 	livereload.listen();
 	gulp.watch(['sources/html/**/*.html'], ['includes']);
-	gulp.watch(['sources/assets/styles/scss/*.scss'], ['sass', 'copy:styles']);
 	gulp.watch(['sources/assets/styles/scss/*.scss'], ['watch-sass']);
 	// gulp.watch(['sources/assets/styles/*.css'], ['sass', 'copy:styles']);
 	gulp.watch([paths.scripts.gulp], ['jshint', 'copy:scripts']);
