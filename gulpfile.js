@@ -61,6 +61,7 @@ var paths = {
 	},
 	scripts: {
 		src: 'sources/assets/scripts/*.js',
+		json: 'sources/assets/scripts/*.json',
 		gulp: 'gulpfile.js',
 		vendor: 'sources/assets/scripts/libs/*.js'
 	}
@@ -220,7 +221,7 @@ gulp.task('watch', function () {
 	gulp.watch(['sources/assets/styles/scss/*.scss'], ['watch-sass']);
 	// gulp.watch(['sources/assets/styles/*.css'], ['sass', 'copy:styles']);
 	gulp.watch([paths.scripts.gulp], ['jshint', 'copy:scripts']);
-	gulp.watch([paths.scripts.src, paths.scripts.vendor], ['copy:scripts']);
+	gulp.watch([paths.scripts.src, paths.scripts.json, paths.scripts.vendor], ['copy:scripts']);
 	gulp.watch(['sources/assets/images/**'], ['check', 'copy:images']);
 	gulp.watch(['sources/assets/images/desktop/sprites/*'], ['sprites:desktop', 'copy:images']);
 	gulp.watch(['sources/assets/images/mobile/sprites/*'], ['sprites:mobile', 'copy:images']);

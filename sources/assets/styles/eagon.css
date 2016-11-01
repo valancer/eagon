@@ -280,23 +280,23 @@ body {
       height: 44px; }
       .layout-header .btn-menus {
         background-image: url(../images/mobile/sprites.png);
-        background-position: 0px -26px;
+        background-position: 0px -55px;
         width: 34px;
         height: 44px; } }
     @media only screen and (min-width: 320px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 1024px) and (min-resolution: 192dpi) {
       .layout-header .btn-menus {
         background-image: url(../images/mobile/sprites@2x.png);
-        background-size: 93px 70px; } }
+        background-size: 148px 99px; } }
   @media only screen and (min-width: 320px) and (max-width: 1024px) {
       .layout-header .logo-eagon {
         background-image: url(../images/mobile/sprites.png);
-        background-position: 0px 0px;
+        background-position: -55px 0px;
         width: 93px;
         height: 20px; } }
     @media only screen and (min-width: 320px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 1024px) and (min-resolution: 192dpi) {
       .layout-header .logo-eagon {
         background-image: url(../images/mobile/sprites@2x.png);
-        background-size: 93px 70px; } }
+        background-size: 148px 99px; } }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .layout-header {
       margin: 0 24px; } }
@@ -307,7 +307,7 @@ body {
       .layout-header .btn-menus {
         margin-top: 22px;
         background-image: url(../images/desktop/sprites.png);
-        background-position: 0px -36px;
+        background-position: -58px -36px;
         width: 41px;
         height: 26px; }
       .layout-header .logo-eagon {
@@ -335,7 +335,6 @@ body {
 /* footer */
 .layout-footer {
   overflow: hidden;
-  margin-top: 74px;
   padding: 12px 12px 37px;
   min-height: 200px;
   background-color: #f8f8f8; }
@@ -357,7 +356,6 @@ body {
         font-weight: 700; }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .layout-footer {
-      margin-top: 120px;
       padding: 0 24px 29px 24px;
       min-height: 265px; }
       .layout-footer .eagon-haus {
@@ -378,7 +376,6 @@ body {
           line-height: 1.313em; } }
   @media only screen and (min-width: 1025px) {
     .layout-footer {
-      margin-top: 250px;
       padding: 0; }
       .layout-footer .layout-footer-inner {
         overflow: hidden;
@@ -408,9 +405,11 @@ body {
           .layout-footer .contents .list-local-business * {
             line-height: 1.500em; } }
 
+/* product list */
 .list-product {
   overflow: hidden;
-  margin-top: 12px; }
+  margin-top: 12px;
+  margin-bottom: 74px; }
   .list-product > li {
     float: left;
     padding-top: 14px;
@@ -425,7 +424,8 @@ body {
       padding-left: 0; } }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .list-product {
-      margin-top: 26px; }
+      margin-top: 26px;
+      margin-bottom: 120px; }
       .list-product > li {
         padding-top: 20px;
         padding-left: 2.777777777778%;
@@ -437,7 +437,8 @@ body {
           font-size: 0.750rem; } }
   @media only screen and (min-width: 1025px) {
     .list-product {
-      margin-top: 33px; }
+      margin-top: 33px;
+      margin-bottom: 250px; }
       .list-product > li {
         padding-top: 60px;
         padding-left: 1.466275659824%;
@@ -447,3 +448,254 @@ body {
         .list-product > li figcaption {
           padding-top: 18px;
           font-size: 1.000rem; } }
+
+/* product detail */
+.product-header {
+  padding: 20px 0 28px 0;
+  text-align: center; }
+  .product-header .product-title {
+    display: inline-block;
+    padding: 0 15px;
+    font-family: "Univers LT W01 45 Light", "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
+    font-size: 1.563rem;
+    font-weight: 400;
+    color: #231f20;
+    text-align: center;
+    line-height: 1.240em;
+    border: 2px solid #000; }
+  .product-header .product-slider {
+    margin-top: 42px;
+    height: 50px;
+    background-color: #000; }
+  .product-header .description {
+    margin-top: 10px;
+    font-size: 0.750rem;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.500em;
+    text-align: left; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .product-header {
+      padding: 36px 0 37px 0; }
+      .product-header .product-title {
+        padding: 0 25px;
+        font-size: 2.250rem; }
+      .product-header .product-slider {
+        margin-top: 56px; }
+      .product-header .description {
+        margin-top: 17px;
+        width: 58%;
+        font-size: 0.750rem;
+        line-height: 1.500em; } }
+  @media only screen and (min-width: 1025px) {
+    .product-header {
+      padding: 57px 0 57px 0; }
+      .product-header .product-title {
+        padding: 0 20px;
+        font-size: 3.375rem;
+        line-height: 1.148em; }
+      .product-header .product-slider {
+        margin-top: 79px; }
+      .product-header .description {
+        margin-top: 30px;
+        width: 58%;
+        font-size: 1.250rem;
+        line-height: 1.400em; } }
+
+.features .features-title {
+  display: none; }
+
+.features .feature .photo {
+  margin: 14px 0 8px 0;
+  height: 50px;
+  background-color: #0f0; }
+
+.features .feature figcaption {
+  padding-bottom: 13px;
+  font-size: 0.563rem;
+  font-weight: 400;
+  color: #231f20;
+  line-height: 1.333em; }
+  .features .feature figcaption:before {
+    content: attr(data-seq);
+    display: block;
+    margin-bottom: 6px;
+    padding-left: 5px;
+    height: 15px;
+    width: 40px;
+    font-size: 0.750rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 15px;
+    background-color: #f1592a; }
+  .features .feature figcaption .title {
+    display: block;
+    font-weight: 700; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .features .list-features {
+    border-top: 0; }
+    .features .list-features > li {
+      border-top: 1px solid #000; }
+      .features .list-features > li.none-mobile {
+        border: 0; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .features .feature .photo {
+    margin: 20px 0 10px 0;
+    height: 50px; }
+  .features .feature figcaption {
+    padding-bottom: 19px;
+    font-size: 0.625rem;
+    line-height: 1.400em; }
+  .features .list-features {
+    overflow: hidden;
+    padding: 0 0 0 18.888888888888889%;
+    border-top: 1px solid #000; }
+    .features .list-features > li {
+      float: left;
+      width: 48.287671232876712%;
+      border-top: 1px solid #000; }
+      .features .list-features > li:nth-child(1), .features .list-features > li:nth-child(2) {
+        border-top: 0px; }
+      .features .list-features > li:nth-child(even) {
+        padding-left: 3.424657534246575%; }
+      .features .list-features > li.line-break {
+        clear: both; } }
+
+@media only screen and (min-width: 1025px) {
+  .features .feature .photo {
+    margin: 30px 0 16px 0;
+    height: 50px; }
+  .features .feature figcaption {
+    padding-bottom: 29px;
+    font-size: 1.000rem;
+    line-height: 1.500em; }
+    .features .feature figcaption:before {
+      margin-bottom: 14px;
+      padding-left: 10px;
+      height: 22px;
+      width: 78px;
+      font-size: 1.125rem;
+      line-height: 22px; }
+  .features .list-features {
+    overflow: hidden;
+    padding: 0 0 0 18.888888888888889%;
+    border-top: 1px solid #000; }
+    .features .list-features > li {
+      float: left;
+      width: 48.287671232876712%;
+      border-top: 1px solid #000; }
+      .features .list-features > li:nth-child(1), .features .list-features > li:nth-child(2) {
+        border-top: 0px; }
+      .features .list-features > li:nth-child(odd) {
+        clear: both; }
+      .features .list-features > li:nth-child(even) {
+        padding-left: 3.424657534246575%; } }
+
+.info-section {
+  overflow: hidden;
+  border-top: 1px solid #000; }
+  .info-section + .info-section {
+    margin-top: 28px;
+    margin-bottom: 70px; }
+  .info-section .info-title {
+    margin-top: 6px;
+    font-size: 0.750rem;
+    font-weight: 700;
+    color: #231f20; }
+  .info-section .info-spec {
+    margin-top: 15px;
+    width: 100%; }
+    .info-section .info-spec thead th {
+      font-size: 0.500rem;
+      font-weight: 700;
+      color: #231f20;
+      text-align: left;
+      border-bottom: 2px solid #000; }
+    .info-section .info-spec tbody th {
+      padding-right: 5.067567567567568%;
+      font-size: 0.500rem;
+      line-height: 12px;
+      text-align: left;
+      border-bottom: 1px solid #000; }
+    .info-section .info-spec tbody td {
+      padding-right: 5.067567567567568%;
+      font-size: 0.438rem;
+      line-height: 12px;
+      text-align: left;
+      border-bottom: 1px solid #000; }
+    .info-section .info-spec .r {
+      text-align: right; }
+  .info-section .btn-download {
+    display: block;
+    float: right;
+    text-indent: -9999px; }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .info-section .btn-download {
+      margin-top: -13px;
+      background-image: url(../images/mobile/sprites.png);
+      background-position: -40px -55px;
+      width: 26px;
+      height: 26px; } }
+  @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {
+    .info-section .btn-download {
+      background-image: url(../images/mobile/sprites@2x.png);
+      background-size: 148px 99px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .info-section + .info-section {
+      margin-top: 40px;
+      margin-bottom: 120px; }
+    .info-section .info-title {
+      margin-top: 3px;
+      font-size: 1.063rem; }
+    .info-section .info-spec {
+      float: right;
+      margin-top: 28px;
+      width: calc(100% - 18.888888888888889%); }
+      .info-section .info-spec thead th {
+        font-size: 0.500rem; }
+      .info-section .info-spec tbody th {
+        font-size: 0.625rem;
+        line-height: 13px; }
+      .info-section .info-spec tbody td {
+        font-size: 0.625rem;
+        line-height: 13px; }
+    .info-section .btn-download {
+      margin-top: -18px;
+      margin-right: 8px;
+      background-image: url(../images/mobile/sprites.png);
+      background-position: 0px 0px;
+      width: 49px;
+      height: 49px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (max-width: 1024px) and (min-resolution: 192dpi) {
+    .info-section .btn-download {
+      background-image: url(../images/mobile/sprites@2x.png);
+      background-size: 148px 99px; } }
+  @media only screen and (min-width: 1025px) {
+    .info-section + .info-section {
+      margin-top: 62px;
+      margin-bottom: 186px; }
+    .info-section .info-title {
+      margin-top: 11px;
+      font-size: 1.500rem; }
+    .info-section .info-spec {
+      float: right;
+      margin-top: 53px;
+      width: calc(100% - 18.888888888888889%); }
+      .info-section .info-spec thead th {
+        font-size: 0.875rem;
+        line-height: 21px; }
+      .info-section .info-spec tbody th {
+        font-size: 0.875rem;
+        line-height: 21px; }
+      .info-section .info-spec tbody td {
+        font-size: 0.875rem;
+        line-height: 21px; }
+    .info-section .btn-download {
+      margin-top: 0px;
+      margin-right: 8px;
+      background-image: url(../images/desktop/sprites.png);
+      background-position: 0px -36px;
+      width: 52px;
+      height: 52px; } }

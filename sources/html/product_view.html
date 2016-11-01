@@ -1,0 +1,105 @@
+@@include('./layout_head.html')
+<body class="page-detail">
+
+	<!-- 상단 영역 -->
+	@@include('./layout_header.html')
+
+
+	<!-- 본문 영역 -->
+	<main class="layout-contents">
+		<article class="contents">
+
+
+			<header class="product-header">
+				<h1 class="product-title"></h1>
+
+				<div class="product-slider">
+					
+				</div>
+				<p class="description"></p>
+			</header>
+
+
+
+			<section class="features">
+				<h2 class="features-title">Features</h2>
+
+				<ul class="list-features">
+<!--
+					<li>
+						<figure class="feature">
+							<div class="photo"></div>
+							<figcaption data-seq="1">
+								<em class="title">소재 | Material</em>
+								<p>
+									알루미늄의 우수한 정밀가공으로 코너부위 마감이 우수합니다.<br>
+									높은 단열성능을 가진 폴리써미드 단열바와 정밀하게 가공한 알루미늄과 특수제작된 기계로 일체화하여 강한 구조력과 동시에 높은 단열성능을 자랑합니다.<br>
+									실내외 색상을 자유롭게 선택하여 인테리어와 건물외관 파사드에 맞도록 다양하게 연출이 가능합니다.<br>
+								</p>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="none-mobile"></li>
+-->
+				</ul>
+			</section>
+
+
+
+			<section class="info-section">
+				<h2 class="info-title">Technical Information</h2>
+
+				<table class="info-spec">
+					<caption></caption>
+					<colgroup>
+						<col style="width: 7.601351351351351%;">
+						<col style="width: 36%;">
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th>No.</th>
+							<th>항목</th>
+							<th>내용</th>
+						</tr>
+					</thead>
+					<tbody>
+<!--
+						<tr>
+							<th class="r">1</th>
+							<th>소재</th>
+							<td>Aluminium</td>
+						</tr>
+-->
+					</tbody>
+				</table>
+			</section>
+
+
+			<section class="info-section">
+				<h2 class="info-title">PDF Download</h2>
+
+				<a href="#download" target="_blank" class="btn-download">PDF 다운로드</a>
+			</section>
+
+		</article>
+	</main>
+	<script>
+	function main(results) {
+		var uid = $.urlParam('uid');
+		var detailItem = $.map(results, function(item) {
+			if( item.uid === uid ) {
+				return item;
+			}
+		});
+
+		ProductDetail.init(detailItem);
+	}
+	</script>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./layout_footer.html')
+
+</body>
+</html>

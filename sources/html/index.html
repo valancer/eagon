@@ -1,0 +1,44 @@
+@@include('./layout_head.html')
+<body>
+
+	<!-- 상단 영역 -->
+	@@include('./layout_header.html')
+
+	<!-- 본문 영역 -->
+	<main class="layout-contents">
+		<article class="contents">
+			<h1 class="page-title">PRODUCT LIST</h1>
+
+			<ul class="list-product">
+<!--
+				<li>
+					<a href="#">
+						<figure>
+							<div class="thumb">
+								<img src="/assets/images/@temp/list01.jpg" alt="Alu Inside 80 TT">
+							</div>
+
+							<figcaption>
+								Alu Inside 80 TT
+							</figcaption>
+						</figure>
+					</a>
+				</li>
+-->
+			</ul>
+
+		</article>
+	</main>
+	<script>
+	function main(results) {
+		
+		ProductList.init(results);
+	}
+	</script>
+
+	
+	<!-- 하단 영역 -->
+	@@include('./layout_footer.html')
+
+</body>
+</html>

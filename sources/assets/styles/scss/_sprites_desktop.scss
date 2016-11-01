@@ -11,17 +11,28 @@ $icon-home: x y offset_x offset_y width height total_width total_height image_pa
 At the bottom of this section, we provide information about the spritesheet itself
 $spritesheet: width height image $spritesheet-sprites;
 */
+$sd-btn-download-name: 'sd-btn_download';
+$sd-btn-download-x: 0px;
+$sd-btn-download-y: 36px;
+$sd-btn-download-offset-x: 0px;
+$sd-btn-download-offset-y: -36px;
+$sd-btn-download-width: 52px;
+$sd-btn-download-height: 52px;
+$sd-btn-download-total-width: 143px;
+$sd-btn-download-total-height: 88px;
+$sd-btn-download-image: '../images/desktop/sprites.png';
+$sd-btn-download: (0px, 36px, 0px, -36px, 52px, 52px, 143px, 88px, '../images/desktop/sprites.png', 'sd-btn_download', );
 $sd-btn-menus-name: 'sd-btn_menus';
-$sd-btn-menus-x: 0px;
+$sd-btn-menus-x: 58px;
 $sd-btn-menus-y: 36px;
-$sd-btn-menus-offset-x: 0px;
+$sd-btn-menus-offset-x: -58px;
 $sd-btn-menus-offset-y: -36px;
 $sd-btn-menus-width: 41px;
 $sd-btn-menus-height: 26px;
 $sd-btn-menus-total-width: 143px;
-$sd-btn-menus-total-height: 62px;
+$sd-btn-menus-total-height: 88px;
 $sd-btn-menus-image: '../images/desktop/sprites.png';
-$sd-btn-menus: (0px, 36px, 0px, -36px, 41px, 26px, 143px, 62px, '../images/desktop/sprites.png', 'sd-btn_menus', );
+$sd-btn-menus: (58px, 36px, -58px, -36px, 41px, 26px, 143px, 88px, '../images/desktop/sprites.png', 'sd-btn_menus', );
 $sd-logo-name: 'sd-logo';
 $sd-logo-x: 0px;
 $sd-logo-y: 0px;
@@ -30,14 +41,14 @@ $sd-logo-offset-y: 0px;
 $sd-logo-width: 143px;
 $sd-logo-height: 30px;
 $sd-logo-total-width: 143px;
-$sd-logo-total-height: 62px;
+$sd-logo-total-height: 88px;
 $sd-logo-image: '../images/desktop/sprites.png';
-$sd-logo: (0px, 0px, 0px, 0px, 143px, 30px, 143px, 62px, '../images/desktop/sprites.png', 'sd-logo', );
+$sd-logo: (0px, 0px, 0px, 0px, 143px, 30px, 143px, 88px, '../images/desktop/sprites.png', 'sd-logo', );
 $spritesheet-width: 143px;
-$spritesheet-height: 62px;
+$spritesheet-height: 88px;
 $spritesheet-image: '../images/desktop/sprites.png';
-$spritesheet-sprites: ($sd-btn-menus, $sd-logo, );
-$spritesheet: (143px, 62px, '../images/desktop/sprites.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($sd-btn-download, $sd-btn-menus, $sd-logo, );
+$spritesheet: (143px, 88px, '../images/desktop/sprites.png', $spritesheet-sprites, );
 
 /*
 The provided mixins are intended to be used with the array-like variables
