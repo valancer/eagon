@@ -125,7 +125,11 @@ var ProductDetail = (function($) {
 			var item = _data.features[i];
 			htmlFeatureList += '<li>';
 			htmlFeatureList += '	<figure class="feature">';
-			htmlFeatureList += '		<div class="photo"></div>';
+			htmlFeatureList += '		<div class="photo">';
+			if( item.url.length > 0 ) {
+				htmlFeatureList += '	<img src="' + item.url  + '" alt="">';
+			}
+			htmlFeatureList += '		</div>';
 			htmlFeatureList += '		<figcaption data-seq="' + (i+1) + '">';
 			htmlFeatureList += '			<em class="title">' + item.title + '</em>';
 			htmlFeatureList += '			<p>' + item.content + '</p>';

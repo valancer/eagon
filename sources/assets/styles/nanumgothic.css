@@ -11,3 +11,7 @@
 	url(/assets/fonts/woff/NanumGothic-Bold.woff2) format('woff2'),
 	url(/assets/fonts/woff/NanumGothic-Bold.woff) format('woff'),
 	url(/assets/fonts/ttf/NanumGothic-Bold.ttf) format('truetype'); }
+@font-face { font-family: 'Nanum Gothic'; font-weight: 800; font-style: normal; src: url(/assets/fonts/eot/NanumGothic-ExtraBold.eot); src: url(/assets/fonts/eot/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+	url(/assets/fonts/woff/NanumGothic-ExtraBold.woff2) format('woff2'),
+	url(/assets/fonts/woff/NanumGothic-ExtraBold.woff) format('woff'),
+	url(/assets/fonts/ttf/NanumGothic-ExtraBold.ttf) format('truetype'); }

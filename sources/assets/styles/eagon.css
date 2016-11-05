@@ -335,25 +335,27 @@ body {
 /* footer */
 .layout-footer {
   overflow: hidden;
-  padding: 12px 12px 37px;
+  padding: 12px 12px 69px;
   min-height: 200px;
   background-color: #f8f8f8; }
   .layout-footer .eagon-haus {
-    font-family: "Univers LT W01 45 Light", "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
+    font-family: Arial, "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
     font-size: 0.750rem;
+    font-weight: 700;
     color: #231f20;
     letter-spacing: 0.3rem; }
   .layout-footer .contents {
     overflow: hidden;
-    font-size: 0.438rem;
+    font-size: 0.625rem;
+    font-weight: 700;
     color: #231f20;
-    line-height: 1.214em; }
+    line-height: 1.400em; }
     .layout-footer .contents .description {
       margin-top: 11px; }
     .layout-footer .contents .list-local-business > li {
       margin-top: 15px; }
       .layout-footer .contents .list-local-business > li .name {
-        font-weight: 700; }
+        font-weight: 800; }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .layout-footer {
       padding: 0 24px 29px 24px;
@@ -366,14 +368,14 @@ body {
         float: right;
         margin-top: 0;
         width: 290px;
-        font-size: 0.500rem; }
+        font-size: 0.625rem; }
         .layout-footer .contents .description {
           margin-top: 17px;
-          line-height: 1.313em; }
+          line-height: 1.400em; }
         .layout-footer .contents .list-local-business > li {
           margin-top: 10px; }
         .layout-footer .contents .list-local-business * {
-          line-height: 1.313em; } }
+          line-height: 1.400em; } }
   @media only screen and (min-width: 1025px) {
     .layout-footer {
       padding: 0; }
@@ -394,7 +396,7 @@ body {
           float: left;
           margin-top: 4px;
           width: 520px;
-          line-height: 1.167rem; }
+          line-height: 1.500em; }
         .layout-footer .contents .list-local-business {
           float: right;
           width: 250px; }
@@ -409,15 +411,16 @@ body {
 .list-product {
   overflow: hidden;
   margin-top: 12px;
-  margin-bottom: 74px; }
+  margin-bottom: 64px; }
   .list-product > li {
     float: left;
     padding-top: 14px;
     padding-left: 4.054054054054%;
     width: 47.972972972973%; }
     .list-product > li figcaption {
-      padding-top: 4px;
-      font-size: 0.500rem;
+      padding-top: 6px;
+      font-size: 0.688rem;
+      font-weight: 800;
       color: #231f20; }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
     .list-product > li:nth-child(2n+1) {
@@ -451,12 +454,12 @@ body {
 
 /* product detail */
 .product-header {
-  padding: 20px 0 28px 0;
+  padding: 20px 0 25px 0;
   text-align: center; }
   .product-header .product-title {
     display: inline-block;
     padding: 0 15px;
-    font-family: "Univers LT W01 45 Light", "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
+    font-family: Arial, "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
     font-size: 1.563rem;
     font-weight: 400;
     color: #231f20;
@@ -485,8 +488,8 @@ body {
       .product-header .description {
         margin-top: 17px;
         width: 58%;
-        font-size: 0.750rem;
-        line-height: 1.500em; } }
+        font-size: 0.938rem;
+        line-height: 1.333em; } }
   @media only screen and (min-width: 1025px) {
     .product-header {
       padding: 57px 0 57px 0; }
@@ -506,16 +509,14 @@ body {
   display: none; }
 
 .features .feature .photo {
-  margin: 14px 0 8px 0;
-  height: 50px;
-  background-color: #0f0; }
+  margin: 14px 0 8px 0; }
 
 .features .feature figcaption {
   padding-bottom: 13px;
-  font-size: 0.563rem;
+  font-size: 0.625rem;
   font-weight: 400;
   color: #231f20;
-  line-height: 1.333em; }
+  line-height: 1.500em; }
   .features .feature figcaption:before {
     content: attr(data-seq);
     display: block;
@@ -530,7 +531,7 @@ body {
     background-color: #f1592a; }
   .features .feature figcaption .title {
     display: block;
-    font-weight: 700; }
+    font-weight: 800; }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .features .list-features {
@@ -542,12 +543,11 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .features .feature .photo {
-    margin: 20px 0 10px 0;
-    height: 50px; }
+    margin: 20px 0 10px 0; }
   .features .feature figcaption {
-    padding-bottom: 19px;
-    font-size: 0.625rem;
-    line-height: 1.400em; }
+    padding-bottom: 18px;
+    font-size: 0.688rem;
+    line-height: 1.455em; }
   .features .list-features {
     overflow: hidden;
     padding: 0 0 0 18.888888888888889%;
@@ -558,15 +558,14 @@ body {
       border-top: 1px solid #000; }
       .features .list-features > li:nth-child(1), .features .list-features > li:nth-child(2) {
         border-top: 0px; }
+      .features .list-features > li:nth-child(odd) {
+        clear: both; }
       .features .list-features > li:nth-child(even) {
-        padding-left: 3.424657534246575%; }
-      .features .list-features > li.line-break {
-        clear: both; } }
+        padding-left: 3.424657534246575%; } }
 
 @media only screen and (min-width: 1025px) {
   .features .feature .photo {
-    margin: 30px 0 16px 0;
-    height: 50px; }
+    margin: 30px 0 16px 0; }
   .features .feature figcaption {
     padding-bottom: 29px;
     font-size: 1.000rem;
@@ -595,6 +594,7 @@ body {
 
 .info-section {
   overflow: hidden;
+  margin-top: 14px;
   border-top: 1px solid #000; }
   .info-section + .info-section {
     margin-top: 28px;
@@ -608,24 +608,28 @@ body {
     margin-top: 15px;
     width: 100%; }
     .info-section .info-spec thead th {
-      font-size: 0.500rem;
+      font-size: 0.625rem;
       font-weight: 700;
       color: #231f20;
+      line-height: 1.700em;
       text-align: left;
       border-bottom: 2px solid #000; }
     .info-section .info-spec tbody th {
       padding-right: 5.067567567567568%;
-      font-size: 0.500rem;
-      line-height: 12px;
+      font-size: 0.625rem;
+      font-weight: 700;
+      line-height: 1.700em;
       text-align: left;
       border-bottom: 1px solid #000; }
     .info-section .info-spec tbody td {
       padding-right: 5.067567567567568%;
-      font-size: 0.438rem;
-      line-height: 12px;
+      font-size: 0.625rem;
+      font-weight: 700;
+      line-height: 1.700em;
       text-align: left;
       border-bottom: 1px solid #000; }
     .info-section .info-spec .r {
+      font-weight: 800;
       text-align: right; }
   .info-section .btn-download {
     display: block;
@@ -643,59 +647,64 @@ body {
       background-image: url(../images/mobile/sprites@2x.png);
       background-size: 148px 99px; } }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .info-section + .info-section {
-      margin-top: 40px;
-      margin-bottom: 120px; }
-    .info-section .info-title {
-      margin-top: 3px;
-      font-size: 1.063rem; }
-    .info-section .info-spec {
-      float: right;
-      margin-top: 28px;
-      width: calc(100% - 18.888888888888889%); }
-      .info-section .info-spec thead th {
-        font-size: 0.500rem; }
-      .info-section .info-spec tbody th {
-        font-size: 0.625rem;
-        line-height: 13px; }
-      .info-section .info-spec tbody td {
-        font-size: 0.625rem;
-        line-height: 13px; }
-    .info-section .btn-download {
-      margin-top: -18px;
-      margin-right: 8px;
-      background-image: url(../images/mobile/sprites.png);
-      background-position: 0px 0px;
-      width: 49px;
-      height: 49px; } }
-  @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (max-width: 1024px) and (min-resolution: 192dpi) {
-    .info-section .btn-download {
-      background-image: url(../images/mobile/sprites@2x.png);
-      background-size: 148px 99px; } }
+    .info-section {
+      margin-top: 19px; }
+      .info-section + .info-section {
+        margin-top: 40px;
+        margin-bottom: 120px; }
+      .info-section .info-title {
+        margin-top: 3px;
+        font-size: 1.063rem; }
+      .info-section .info-spec {
+        float: right;
+        margin-top: 28px;
+        width: calc(100% - 18.888888888888889%); }
+        .info-section .info-spec thead th {
+          font-size: 0.688rem;
+          line-height: 1.455em; }
+        .info-section .info-spec tbody th {
+          font-size: 0.688rem;
+          line-height: 1.455em; }
+        .info-section .info-spec tbody td {
+          font-size: 0.688rem;
+          line-height: 1.455em; }
+      .info-section .btn-download {
+        margin-top: -18px;
+        margin-right: 8px;
+        background-image: url(../images/mobile/sprites.png);
+        background-position: 0px 0px;
+        width: 49px;
+        height: 49px; } }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (max-width: 1024px) and (min-resolution: 192dpi) {
+      .info-section .btn-download {
+        background-image: url(../images/mobile/sprites@2x.png);
+        background-size: 148px 99px; } }
   @media only screen and (min-width: 1025px) {
-    .info-section + .info-section {
-      margin-top: 62px;
-      margin-bottom: 186px; }
-    .info-section .info-title {
-      margin-top: 11px;
-      font-size: 1.500rem; }
-    .info-section .info-spec {
-      float: right;
-      margin-top: 53px;
-      width: calc(100% - 18.888888888888889%); }
-      .info-section .info-spec thead th {
-        font-size: 0.875rem;
-        line-height: 21px; }
-      .info-section .info-spec tbody th {
-        font-size: 0.875rem;
-        line-height: 21px; }
-      .info-section .info-spec tbody td {
-        font-size: 0.875rem;
-        line-height: 21px; }
-    .info-section .btn-download {
-      margin-top: 0px;
-      margin-right: 8px;
-      background-image: url(../images/desktop/sprites.png);
-      background-position: 0px -36px;
-      width: 52px;
-      height: 52px; } }
+    .info-section {
+      margin-top: 30px; }
+      .info-section + .info-section {
+        margin-top: 62px;
+        margin-bottom: 186px; }
+      .info-section .info-title {
+        margin-top: 11px;
+        font-size: 1.500rem; }
+      .info-section .info-spec {
+        float: right;
+        margin-top: 53px;
+        width: calc(100% - 18.888888888888889%); }
+        .info-section .info-spec thead th {
+          font-size: 0.875rem;
+          line-height: 1.571em; }
+        .info-section .info-spec tbody th {
+          font-size: 0.875rem;
+          line-height: 1.571em; }
+        .info-section .info-spec tbody td {
+          font-size: 0.875rem;
+          line-height: 1.571em; }
+      .info-section .btn-download {
+        margin-top: -25px;
+        margin-right: 8px;
+        background-image: url(../images/desktop/sprites.png);
+        background-position: 0px -36px;
+        width: 52px;
+        height: 52px; } }

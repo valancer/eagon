@@ -1,7 +1,7 @@
 /* product list */
-.list-product { overflow: hidden; margin-top: 12px; margin-bottom: 74px;
+.list-product { overflow: hidden; margin-top: 12px; margin-bottom: 64px;
 	> li { float: left; padding-top: 14px; padding-left: 4.054054054054%; width: 47.972972972973%;
-		figcaption { padding-top: 4px; font-size: 0.500rem; color: #231f20; }
+		figcaption { padding-top: 6px; font-size: 0.688rem; font-weight: 800; color: #231f20; }
 	}
 
 	@include phone {
@@ -29,7 +29,7 @@
 
 
 /* product detail */
-.product-header { padding: 20px 0 28px 0; text-align: center;
+.product-header { padding: 20px 0 25px 0; text-align: center;
 	.product-title { display: inline-block; padding: 0 15px; font-family: $font-special-stack; font-size: 1.563rem; font-weight: 400; color: #231f20; text-align: center; line-height: 1.240em; border: 2px solid #000; }
 	.product-slider { margin-top: 42px; height: 50px; background-color: #000; }
 	.description { margin-top: 10px; font-size: 0.750rem; font-weight: 700; color: #000; line-height: 1.500em; text-align: left; }
@@ -38,7 +38,7 @@
 	@include tablet { padding: 36px 0 37px 0;
 		.product-title { padding: 0 25px; font-size: 2.250rem; }
 		.product-slider { margin-top: 56px; }
-		.description { margin-top: 17px; width: 58%; font-size: 0.750rem; line-height: 1.500em; }
+		.description { margin-top: 17px; width: 58%; font-size: 0.938rem; line-height: 1.333em; }
 	}
 	@include desktop { padding: 57px 0 57px 0;
 		.product-title { padding: 0 20px; font-size: 3.375rem; line-height: 1.148em; }
@@ -51,11 +51,11 @@
 	.features-title { display: none; }
 
 	.feature { 
-		.photo { margin: 14px 0 8px 0; height: 50px; background-color: #0f0; }
+		.photo { margin: 14px 0 8px 0; }
 
-		figcaption { padding-bottom: 13px; font-size: 0.563rem; font-weight: 400; color: #231f20; line-height: 1.333em;
+		figcaption { padding-bottom: 13px; font-size: 0.625rem; font-weight: 400; color: #231f20; line-height: 1.500em;
 			&:before { content: attr(data-seq); display: block; margin-bottom: 6px; padding-left: 5px; height: 15px; width: 40px; font-size: 0.750rem; font-weight: 700; color: #fff; line-height: 15px; background-color: #f1592a; }
-			.title { display: block; font-weight: 700; }
+			.title { display: block; font-weight: 800; }
 		}
 	}
 
@@ -68,9 +68,9 @@
 	}
 	@include tablet {
 		.feature { 
-			.photo { margin: 20px 0 10px 0; height: 50px; }
+			.photo { margin: 20px 0 10px 0; }
 
-			figcaption { padding-bottom: 19px; font-size: 0.625rem; line-height: 1.400em; }
+			figcaption { padding-bottom: 18px; font-size: 0.688rem; line-height: 1.455em; }
 		}
 
 		.list-features { overflow: hidden; padding: 0 0 0 18.888888888888889%; border-top: 1px solid #000;
@@ -78,16 +78,14 @@
 				&:nth-child(1),
 				&:nth-child(2) { border-top: 0px; }
 
-				&:nth-child(odd) { }
+				&:nth-child(odd) { clear: both; }
 				&:nth-child(even) { padding-left: 3.424657534246575%; }
-
-				&.line-break { clear: both; }
 			}
 		}
 	}
 	@include desktop {
 		.feature { 
-			.photo { margin: 30px 0 16px 0; height: 50px; }
+			.photo { margin: 30px 0 16px 0; }
 
 			figcaption { padding-bottom: 29px; font-size: 1.000rem; line-height: 1.500em;
 				&:before { margin-bottom: 14px; padding-left: 10px; height: 22px; width: 78px; font-size: 1.125rem; line-height: 22px; }
@@ -107,56 +105,56 @@
 }
 
 
-.info-section { overflow: hidden; border-top: 1px solid #000;
+.info-section { overflow: hidden; margin-top: 14px; border-top: 1px solid #000;
 	+ .info-section { margin-top: 28px; margin-bottom: 70px; }
 
 	.info-title { margin-top: 6px; font-size: 0.750rem; font-weight: 700; color: #231f20; }
 	.info-spec { margin-top: 15px; width: 100%;
 		thead {
-			th { font-size: 0.500rem; font-weight: 700; color: #231f20; text-align: left; border-bottom: 2px solid #000; }
+			th { font-size: 0.625rem; font-weight: 700; color: #231f20; line-height: 1.700em; text-align: left; border-bottom: 2px solid #000; }
 		}
 		tbody {
-			th { padding-right: 5.067567567567568%; font-size: 0.500rem; line-height: 12px; text-align: left; border-bottom: 1px solid #000; }
-			td { padding-right: 5.067567567567568%; font-size: 0.438rem; line-height: 12px; text-align: left; border-bottom: 1px solid #000; }
+			th { padding-right: 5.067567567567568%; font-size: 0.625rem; font-weight: 700; line-height: 1.700em; text-align: left; border-bottom: 1px solid #000; }
+			td { padding-right: 5.067567567567568%; font-size: 0.625rem; font-weight: 700; line-height: 1.700em; text-align: left; border-bottom: 1px solid #000; }
 		}
 
-		.r { text-align: right; }
+		.r { font-weight: 800; text-align: right; }
 	}
 	.btn-download { display: block; float: right; text-indent: -9999px; }
 
 	@include phone {
 		.btn-download { margin-top: -13px; @include retina-sprite($sm-btn-download-group); }
 	}
-	@include tablet {
+	@include tablet { margin-top: 19px;
 		+ .info-section { margin-top: 40px; margin-bottom: 120px; }
 
 		.info-title { margin-top: 3px; font-size: 1.063rem; }
 		.info-spec { float: right; margin-top: 28px; width: calc(100% - 18.888888888888889%);
 			thead {
-				th { font-size: 0.500rem; }
+				th { font-size: 0.688rem; line-height: 1.455em; }
 			}
 			tbody {
-				th { font-size: 0.625rem; line-height: 13px; }
-				td { font-size: 0.625rem; line-height: 13px; }
+				th { font-size: 0.688rem; line-height: 1.455em; }
+				td { font-size: 0.688rem; line-height: 1.455em; }
 			}
 		}
 
 		.btn-download { margin-top: -18px; margin-right: 8px; @include retina-sprite($sm-btn-download-tablet-group); }
 	}
-	@include desktop {
+	@include desktop { margin-top: 30px;
 		+ .info-section { margin-top: 62px; margin-bottom: 186px; }
 
 		.info-title { margin-top: 11px; font-size: 1.500rem; }
 		.info-spec { float: right; margin-top: 53px; width: calc(100% - 18.888888888888889%);
 			thead {
-				th { font-size: 0.875rem; line-height: 21px; }
+				th { font-size: 0.875rem; line-height: 1.571em; }
 			}
 			tbody {
-				th { font-size: 0.875rem; line-height: 21px; }
-				td { font-size: 0.875rem; line-height: 21px; }
+				th { font-size: 0.875rem; line-height: 1.571em; }
+				td { font-size: 0.875rem; line-height: 1.571em; }
 			}
 		}
 
-		.btn-download { margin-top: 0px; margin-right: 8px; @include sprite($sd-btn-download); }
+		.btn-download { margin-top: -25px; margin-right: 8px; @include sprite($sd-btn-download); }
 	}
 }
