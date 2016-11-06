@@ -1,7 +1,7 @@
 /* product list */
 .list-product { overflow: hidden; margin-top: 12px; margin-bottom: 64px;
-	> li { float: left; padding-top: 14px; padding-left: 4.054054054054%; width: 47.972972972973%;
-		figcaption { padding-top: 6px; font-size: 0.688rem; font-weight: 800; color: #231f20; }
+	> li { float: left; padding-top: 15px; padding-left: 4.054054054054%; width: 47.972972972973%;
+		figcaption { padding-top: 5px; font-size: 0.750rem; font-weight: 800; color: #4f4e4e; }
 	}
 
 	@include phone {
@@ -14,7 +14,7 @@
 		> li { padding-top: 20px; padding-left: 2.777777777778%; width: 31.388888888889%;
 			&:nth-child(3n+1) { padding-left: 0; }
 
-			figcaption { padding-top: 3px; font-size: 0.750rem; }
+			figcaption { padding-top: 3px; font-size: 0.813rem; }
 		}
 	}
 
@@ -22,7 +22,7 @@
 		> li { padding-top: 60px; padding-left: 1.466275659824%; width: 23.900293255132%;
 			&:nth-child(4n+1) { padding-left: 0; }
 
-			figcaption { padding-top: 18px; font-size: 1.000rem; }
+			figcaption { padding-top: 18px; font-size: 1.063rem; font-weight: 700; }
 		}
 	}
 }
@@ -31,19 +31,31 @@
 /* product detail */
 .product-header { padding: 20px 0 25px 0; text-align: center;
 	.product-title { display: inline-block; padding: 0 15px; font-family: $font-special-stack; font-size: 1.563rem; font-weight: 400; color: #231f20; text-align: center; line-height: 1.240em; border: 2px solid #000; }
-	.product-slider { margin-top: 42px; height: 50px; background-color: #000; }
-	.description { margin-top: 10px; font-size: 0.750rem; font-weight: 700; color: #000; line-height: 1.500em; text-align: left; }
+	.description { margin-top: 10px; font-size: 0.938rem; font-weight: 700; color: #000; line-height: 1.400em; text-align: left; }
+
+	.product-slider { position: relative; margin-top: 42px; width: 100%;
+		// .slick-arrow { display: none; }
+		.product-item { width: 100%;
+			img { width: 100%; }
+		}
+	}
 
 	@include phone { }
 	@include tablet { padding: 36px 0 37px 0;
 		.product-title { padding: 0 25px; font-size: 2.250rem; }
 		.product-slider { margin-top: 56px; }
-		.description { margin-top: 17px; width: 58%; font-size: 0.938rem; line-height: 1.333em; }
+		.description { margin-top: 17px; width: 58%; font-size: 0.938rem; line-height: 1.467em; }
 	}
 	@include desktop { padding: 57px 0 57px 0;
 		.product-title { padding: 0 20px; font-size: 3.375rem; line-height: 1.148em; }
 		.product-slider { margin-top: 79px; }
 		.description { margin-top: 30px; width: 58%; font-size: 1.250rem; line-height: 1.400em; }
+
+		.slick-arrow { display: block; position: absolute; top: 50%; z-index: z("default"); text-indent: -9999px;
+			&.slick-prev { left: 15px; margin-top: -$sd-btn-prev-height/2; @include sprite($sd-btn-prev); }
+			&.slick-next { right: 15px; margin-top: -$sd-btn-next-height/2; @include sprite($sd-btn-next); }
+		}
+
 	}
 }
 
@@ -53,15 +65,17 @@
 	.feature { 
 		.photo { margin: 14px 0 8px 0; }
 
-		figcaption { padding-bottom: 13px; font-size: 0.625rem; font-weight: 400; color: #231f20; line-height: 1.500em;
+		figcaption { padding-bottom: 13px; font-size: 0.750rem; font-weight: 400; color: #4f4e4e; line-height: 1.417em;
 			&:before { content: attr(data-seq); display: block; margin-bottom: 6px; padding-left: 5px; height: 15px; width: 40px; font-size: 0.750rem; font-weight: 700; color: #fff; line-height: 15px; background-color: #f1592a; }
-			.title { display: block; font-weight: 800; }
+			
+			* { line-height: 1.417em; }
+			.title { display: block; font-weight: 700; color: #231f20; }
 		}
 	}
 
 	@include phone {
 		.list-features { border-top: 0;
-			> li { border-top: 1px solid #000;
+			> li { border-top: 1px solid #4f4e4e;
 				&.none-mobile { border: 0; }
 			}
 		}
@@ -70,11 +84,14 @@
 		.feature { 
 			.photo { margin: 20px 0 10px 0; }
 
-			figcaption { padding-bottom: 18px; font-size: 0.688rem; line-height: 1.455em; }
+			figcaption { padding-bottom: 18px; font-size: 0.750rem; line-height: 1.417em;
+				* { line-height: 1.417em; }
+				.title { font-size: 0.688rem; font-weight: 800; color: #231f20; line-height: 1.455em; }
+			}
 		}
 
-		.list-features { overflow: hidden; padding: 0 0 0 18.888888888888889%; border-top: 1px solid #000;
-			> li { float: left; width: 48.287671232876712%; border-top: 1px solid #000;
+		.list-features { overflow: hidden; padding: 0 0 0 18.888888888888889%; border-top: 1px solid #4f4e4e;
+			> li { float: left; width: 48.287671232876712%; border-top: 1px solid #4f4e4e;
 				&:nth-child(1),
 				&:nth-child(2) { border-top: 0px; }
 
@@ -89,11 +106,13 @@
 
 			figcaption { padding-bottom: 29px; font-size: 1.000rem; line-height: 1.500em;
 				&:before { margin-bottom: 14px; padding-left: 10px; height: 22px; width: 78px; font-size: 1.125rem; line-height: 22px; }
+
+				* { line-height: 1.500em; }
 			}
 		}
 
-		.list-features { overflow: hidden; padding: 0 0 0 18.888888888888889%; border-top: 1px solid #000;
-			> li { float: left; width: 48.287671232876712%; border-top: 1px solid #000;
+		.list-features { overflow: hidden; padding: 0 0 0 18.888888888888889%; border-top: 1px solid #4f4e4e;
+			> li { float: left; width: 48.287671232876712%; border-top: 1px solid #4f4e4e;
 				&:nth-child(1),
 				&:nth-child(2) { border-top: 0px; }
 
@@ -105,17 +124,17 @@
 }
 
 
-.info-section { overflow: hidden; margin-top: 14px; border-top: 1px solid #000;
+.info-section { overflow: hidden; margin-top: 14px; border-top: 1px solid #4f4e4e;
 	+ .info-section { margin-top: 28px; margin-bottom: 70px; }
 
 	.info-title { margin-top: 6px; font-size: 0.750rem; font-weight: 700; color: #231f20; }
 	.info-spec { margin-top: 15px; width: 100%;
 		thead {
-			th { font-size: 0.625rem; font-weight: 700; color: #231f20; line-height: 1.700em; text-align: left; border-bottom: 2px solid #000; }
+			th { font-size: 0.625rem; font-weight: 700; color: #231f20; line-height: 1.600em; text-align: left; border-bottom: 2px solid #4f4e4e; }
 		}
 		tbody {
-			th { padding-right: 5.067567567567568%; font-size: 0.625rem; font-weight: 700; line-height: 1.700em; text-align: left; border-bottom: 1px solid #000; }
-			td { padding-right: 5.067567567567568%; font-size: 0.625rem; font-weight: 700; line-height: 1.700em; text-align: left; border-bottom: 1px solid #000; }
+			th { padding-right: 5.067567567567568%; font-size: 0.625rem; font-weight: 700; line-height: 1.600em; text-align: left; border-bottom: 1px solid #4f4e4e; }
+			td { padding-right: 5.067567567567568%; font-size: 0.625rem; font-weight: 700; line-height: 1.600em; text-align: left; border-bottom: 1px solid #4f4e4e; }
 		}
 
 		.r { font-weight: 800; text-align: right; }

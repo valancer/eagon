@@ -99,6 +99,7 @@ var ProductDetail = (function($) {
 		$listFeatures,
 		$infoSpec,
 		$btnDownload,
+		$sliderContainer,
 		_data,
 		init = function(data) {
 			$container = $('.page-detail');
@@ -106,6 +107,7 @@ var ProductDetail = (function($) {
 			$listFeatures = $container.find('.list-features');
 			$infoSpec = $container.find('.info-spec tbody');
 			$btnDownload = $container.find('.btn-download');
+			$sliderContainer = $container.find('.product-slider');
 			_data = data[0];
 
 			initLayout();
@@ -118,6 +120,16 @@ var ProductDetail = (function($) {
 		var $phDescription = $productHeader.find('.description');
 		$phTitle.html(_data.title);
 		$phDescription.html(_data.description);
+
+		// slider
+		var htmlSlider = "";
+		for( var i=0; i < _data.photos.length; i++ ) {
+			var url = _data.photos[i];
+			htmlSlider += '<div class="product-item">';
+			htmlSlider += '	<a href="#' + i + '"><img src="' + url.mobile + '" data-responsimg-mobile="' + url.mobile + '" data-responsimg-desktop="' + url.desktop + '" alt="' + _data.title + '" class="responsive-image"></a>';
+			htmlSlider += '</div>';
+		}
+		$sliderContainer.html(htmlSlider);
 
 		// feautures
 		var htmlFeatureList = "";
@@ -157,6 +169,35 @@ var ProductDetail = (function($) {
 	}
 
 	function initEvent() {
+		// slider & response images
+		$('.responsive-image').responsImg({
+			breakpoints: {
+				mobile: 767,
+				desktop: 768
+			}
+		});
+
+		$sliderContainer.slick({
+			lazyLoad: 'ondemand',
+			arrows: true,
+			dots: false,
+			infinite: false,
+			draggable: true,
+			adaptiveHeight: true,
+			autoplay: true,
+  			autoplaySpeed: 2000,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			slide: '.product-item',
+			responsive: [
+				{
+					breakpoint: 1024,
+					settings: {
+						arrows: false
+					}
+				}
+			]
+		});
 	}
 
 	return {
