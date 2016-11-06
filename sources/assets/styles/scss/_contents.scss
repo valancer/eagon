@@ -55,7 +55,6 @@
 			&.slick-prev { left: 15px; margin-top: -$sd-btn-prev-height/2; @include sprite($sd-btn-prev); }
 			&.slick-next { right: 15px; margin-top: -$sd-btn-next-height/2; @include sprite($sd-btn-next); }
 		}
-
 	}
 }
 

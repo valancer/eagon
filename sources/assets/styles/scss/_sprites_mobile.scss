@@ -22,6 +22,17 @@ $sm-btn-close-total-width: 148px;
 $sm-btn-close-total-height: 99px;
 $sm-btn-close-image: '../images/mobile/sprites.png';
 $sm-btn-close: (0px, 55px, 0px, -55px, 34px, 44px, 148px, 99px, '../images/mobile/sprites.png', 'sm-btn_close', );
+$sm-btn-close-popup-name: 'sm-btn_close_popup';
+$sm-btn-close-popup-x: 55px;
+$sm-btn-close-popup-y: 26px;
+$sm-btn-close-popup-offset-x: -55px;
+$sm-btn-close-popup-offset-y: -26px;
+$sm-btn-close-popup-width: 19px;
+$sm-btn-close-popup-height: 19px;
+$sm-btn-close-popup-total-width: 148px;
+$sm-btn-close-popup-total-height: 99px;
+$sm-btn-close-popup-image: '../images/mobile/sprites.png';
+$sm-btn-close-popup: (55px, 26px, -55px, -26px, 19px, 19px, 148px, 99px, '../images/mobile/sprites.png', 'sm-btn_close_popup', );
 $sm-btn-download-name: 'sm-btn_download';
 $sm-btn-download-x: 80px;
 $sm-btn-download-y: 55px;
@@ -77,6 +88,17 @@ $sm-btn-close-2x-total-width: 296px;
 $sm-btn-close-2x-total-height: 198px;
 $sm-btn-close-2x-image: '../images/mobile/sprites@2x.png';
 $sm-btn-close-2x: (0px, 110px, 0px, -110px, 68px, 88px, 296px, 198px, '../images/mobile/sprites@2x.png', 'sm-btn_close@2x', );
+$sm-btn-close-popup-2x-name: 'sm-btn_close_popup@2x';
+$sm-btn-close-popup-2x-x: 110px;
+$sm-btn-close-popup-2x-y: 52px;
+$sm-btn-close-popup-2x-offset-x: -110px;
+$sm-btn-close-popup-2x-offset-y: -52px;
+$sm-btn-close-popup-2x-width: 38px;
+$sm-btn-close-popup-2x-height: 38px;
+$sm-btn-close-popup-2x-total-width: 296px;
+$sm-btn-close-popup-2x-total-height: 198px;
+$sm-btn-close-popup-2x-image: '../images/mobile/sprites@2x.png';
+$sm-btn-close-popup-2x: (110px, 52px, -110px, -52px, 38px, 38px, 296px, 198px, '../images/mobile/sprites@2x.png', 'sm-btn_close_popup@2x', );
 $sm-btn-download-2x-name: 'sm-btn_download@2x';
 $sm-btn-download-2x-x: 160px;
 $sm-btn-download-2x-y: 110px;
@@ -124,12 +146,12 @@ $sm-logo-2x: (110px, 0px, -110px, 0px, 186px, 40px, 296px, 198px, '../images/mob
 $spritesheet-width: 148px;
 $spritesheet-height: 99px;
 $spritesheet-image: '../images/mobile/sprites.png';
-$spritesheet-sprites: ($sm-btn-close, $sm-btn-download, $sm-btn-download-tablet, $sm-btn-menus, $sm-logo, );
+$spritesheet-sprites: ($sm-btn-close, $sm-btn-close-popup, $sm-btn-download, $sm-btn-download-tablet, $sm-btn-menus, $sm-logo, );
 $spritesheet: (148px, 99px, '../images/mobile/sprites.png', $spritesheet-sprites, );
 $retina-spritesheet-width: 296px;
 $retina-spritesheet-height: 198px;
 $retina-spritesheet-image: '../images/mobile/sprites@2x.png';
-$retina-spritesheet-sprites: ($sm-btn-close-2x, $sm-btn-download-2x, $sm-btn-download-tablet-2x, $sm-btn-menus-2x, $sm-logo-2x, );
+$retina-spritesheet-sprites: ($sm-btn-close-2x, $sm-btn-close-popup-2x, $sm-btn-download-2x, $sm-btn-download-tablet-2x, $sm-btn-menus-2x, $sm-logo-2x, );
 $retina-spritesheet: (296px, 198px, '../images/mobile/sprites@2x.png', $retina-spritesheet-sprites, );
 
 /*
@@ -139,6 +161,8 @@ The list formatted variables are intended for mixins like `retina-sprite` and `r
 */
 $sm-btn-close-group-name: 'sm-btn_close';
 $sm-btn-close-group: ('sm-btn_close', $sm-btn-close, $sm-btn-close-2x, );
+$sm-btn-close-popup-group-name: 'sm-btn_close_popup';
+$sm-btn-close-popup-group: ('sm-btn_close_popup', $sm-btn-close-popup, $sm-btn-close-popup-2x, );
 $sm-btn-download-group-name: 'sm-btn_download';
 $sm-btn-download-group: ('sm-btn_download', $sm-btn-download, $sm-btn-download-2x, );
 $sm-btn-download-tablet-group-name: 'sm-btn_download_tablet';
@@ -147,7 +171,7 @@ $sm-btn-menus-group-name: 'sm-btn_menus';
 $sm-btn-menus-group: ('sm-btn_menus', $sm-btn-menus, $sm-btn-menus-2x, );
 $sm-logo-group-name: 'sm-logo';
 $sm-logo-group: ('sm-logo', $sm-logo, $sm-logo-2x, );
-$retina-groups: ($sm-btn-close-group, $sm-btn-download-group, $sm-btn-download-tablet-group, $sm-btn-menus-group, $sm-logo-group, );
+$retina-groups: ($sm-btn-close-group, $sm-btn-close-popup-group, $sm-btn-download-group, $sm-btn-download-tablet-group, $sm-btn-menus-group, $sm-logo-group, );
 
 /*
 The provided mixins are intended to be used with the array-like variables

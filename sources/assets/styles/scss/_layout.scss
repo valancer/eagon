@@ -16,7 +16,7 @@ body { overflow: auto; background-color: #fff;
 			@include tablet { padding: 0 24px; }
 
 			@include desktop { padding: 0 100px;
-				.btn-menus { @include sprite($sd-btn-close); }
+				.btn-menus { margin-top: 0; @include sprite($sd-btn-close); }
 			}
 		}
 	}
@@ -34,8 +34,8 @@ body { overflow: auto; background-color: #fff;
 		transition: opacity 0.3s ease-in-out;
 
 		.navigation-title { display: none; }
-		.list-menus { display: inline-block; margin-top: 36px; padding: 0 10px;
-			> li { border-top: 1px solid #040404;
+		.list-menus { display: inline-block; margin-top: 36px;
+			> li { padding: 0 10px; border-top: 1px solid #040404;
 				&:first-child { border-top: 0; }
 
 				a { display: block; font-size: 18px; font-weight: 400; color: #231f20; text-align: center; line-height: 29px; }
@@ -65,8 +65,8 @@ body { overflow: auto; background-color: #fff;
 		.btn-menus { margin-top: 22px; @include sprite($sd-btn-menus); }
 		.logo-eagon { margin-top: 20px; @include sprite($sd-logo); }
 		.navigation {
-			.list-menus { margin-top: 80px; padding: 0 15px;
-				> li {
+			.list-menus { margin-top: 80px;
+				> li { padding: 0 30px;
 					a { font-size: 24px; line-height: 50px; }
 				}
 			}
@@ -125,3 +125,70 @@ body { overflow: auto; background-color: #fff;
 		}
 	}
 }
+
+
+/* popup */
+@include desktop {
+	.mfp-content { height: 100%; background-color: #fff; }
+}
+.layout-popup { position: relative; background-color: #fff;
+	.mfp-close { display: block; position: absolute; top: 20px; right: 12px; z-index: z("default"); text-indent: -9999px; }
+
+	.popup-header { position: relative; padding: 2px 12px 15px; background-color: #feefea;
+		.title { display: block; font-family: $font-special-stack; font-size: 1.063rem; font-weight: 700; color: #231f20; line-height: 50px; }
+		.description { font-size: 0.750rem; font-weight: 700; color: #4f4e4e; line-height: 1.417em; }
+	}
+
+	.popup-slider { border-top: 34px solid #f1592a; border-right: 12px solid #f1592a; border-left: 12px solid #f1592a; border-bottom: 34px solid #f1592a; 
+		.popup-item { padding-bottom: 15px; }
+
+		.slick-slide { float: none; }
+	}
+	
+	@include mobile {
+		.mfp-close { @include retina-sprite($sm-btn-close-popup-group); }
+	}
+
+	@include tablet {
+		.mfp-close { right: 24px; @include retina-sprite($sm-btn-close-popup-group); }
+
+		.popup-header { padding: 0px 96px 0px 24px; background-color: #fff;
+			.title { font-size: 1.625rem; line-height: 68px; }
+			.description { font-size: 0.938rem; line-height: 1.400em; }
+		}
+
+		.popup-slider { padding: 24px; border: 0;
+			.popup-item { padding-bottom: 24px; }
+
+			.slick-slide { float: none; }
+		}
+	}
+
+	@include desktop { background-color: #fff;
+		.mfp-close { right: 100px; @include sprite($sd-btn-close); }
+
+		.popup-header { position: relative; padding: 0px 50% 0px 100px; background-color: #fff;
+			.title { font-size: 1.875rem; line-height: 100px; }
+			.description { font-size: 0.813rem; line-height: 1.308em; }
+		}
+
+		.popup-slider { position: relative; padding: 50px 100px; border: 0px;
+			.popup-item { padding: 0; }
+
+			.slick-slide { float: left; }
+			.slick-arrow { display: block; position: absolute; top: 50%; z-index: z("default"); text-indent: -9999px;
+				&.slick-prev { left: 115px; margin-top: -$sd-btn-prev-02-height/2; @include sprite($sd-btn-prev-02); }
+				&.slick-next { right: 115px; margin-top: -$sd-btn-next-02-height/2; @include sprite($sd-btn-next-02); }
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

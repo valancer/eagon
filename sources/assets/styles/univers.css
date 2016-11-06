@@ -1,8 +1,0 @@
-@font-face {font-family: "Univers LT W01 45 Light";
-  src: url("/assets/fonts/eot/Univers-LT-W01-45-Light.eot"); /* IE9*/
-  src: url("/assets/fonts/eot/Univers-LT-W01-45-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("/assets/fonts/woff/Univers-LT-W01-45-Light.woff2") format("woff2"), /* chrome、firefox */
-  url("/assets/fonts/woff/Univers-LT-W01-45-Light.woff") format("woff"), /* chrome、firefox */
-  url("/assets/fonts/otf/Univers-LT-W01-45-Light.otf") format('opentype'),
-  url("/assets/fonts/ttf/Univers-LT-W01-45-Light.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-}
