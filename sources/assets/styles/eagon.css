@@ -330,25 +330,102 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
  */
 /** layout **/
 body {
+  overflow: auto;
   background-color: #fff; }
+  body[data-state=open] {
+    overflow: hidden; }
+    body[data-state=open] .layout-header {
+      display: block;
+      overflow: auto;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1000;
+      margin: 0;
+      padding: 0 12px;
+      height: auto;
+      border-bottom: 0px;
+      background-color: rgba(242, 242, 242, 0.95);
+      transition: background-color 0.3s ease-in-out; }
+      body[data-state=open] .layout-header .navigation {
+        opacity: 1;
+        visibility: visible; }
+      @media only screen and (min-width: 320px) and (max-width: 1024px) {
+        body[data-state=open] .layout-header .btn-menus {
+          background-image: url(../images/mobile/sprites.png);
+          background-position: 0px -55px;
+          width: 34px;
+          height: 44px; } }
+  @media only screen and (min-width: 320px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 1024px) and (min-resolution: 192dpi) {
+    body[data-state=open] .layout-header .btn-menus {
+      background-image: url(../images/mobile/sprites@2x.png);
+      background-size: 148px 99px; } }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        body[data-state=open] .layout-header {
+          padding: 0 24px; } }
+      @media only screen and (min-width: 1025px) {
+        body[data-state=open] .layout-header {
+          padding: 0 100px; }
+          body[data-state=open] .layout-header .btn-menus {
+            background-image: url(../images/desktop/sprites.png);
+            background-position: -149px -58px;
+            width: 34px;
+            height: 44px; } }
 
 /* header */
 .layout-header {
   margin: 0 12px;
   border-bottom: 1px solid #000;
-  background-color: #fff; }
+  background-color: #fff;
+  transition: background-color 0.3s ease-in-out; }
   .layout-header .btn-menus {
     text-indent: -9999px; }
   .layout-header .logo-eagon {
     float: right;
     margin-top: 10px;
     text-indent: -9999px; }
+  .layout-header .navigation {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    border-top: 1px solid #000;
+    transition: opacity 0.3s ease-in-out; }
+    .layout-header .navigation .navigation-title {
+      display: none; }
+    .layout-header .navigation .list-menus {
+      display: inline-block;
+      margin-top: 36px;
+      padding: 0 10px; }
+      .layout-header .navigation .list-menus > li {
+        border-top: 1px solid #040404; }
+        .layout-header .navigation .list-menus > li:first-child {
+          border-top: 0; }
+        .layout-header .navigation .list-menus > li a {
+          display: block;
+          font-size: 18px;
+          font-weight: 400;
+          color: #231f20;
+          text-align: center;
+          line-height: 29px; }
+    .layout-header .navigation .eagon-haus {
+      display: block;
+      margin-top: 60px;
+      font-family: Arial, "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
+      font-size: 0.563rem;
+      font-weight: 700;
+      color: #231f20;
+      letter-spacing: 0.3rem;
+      text-align: center; }
   @media only screen and (min-width: 320px) and (max-width: 1024px) {
     .layout-header {
       height: 44px; }
       .layout-header .btn-menus {
         background-image: url(../images/mobile/sprites.png);
-        background-position: 0px -55px;
+        background-position: -40px -55px;
         width: 34px;
         height: 44px; } }
     @media only screen and (min-width: 320px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 1024px) and (min-resolution: 192dpi) {
@@ -367,7 +444,13 @@ body {
         background-size: 148px 99px; } }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .layout-header {
-      margin: 0 24px; } }
+      margin: 0 24px; }
+      .layout-header .navigation .list-menus > li a {
+        font-size: 15px;
+        line-height: 26px; }
+      .layout-header .navigation .eagon-haus {
+        margin-top: 35px;
+        font-size: 0.750rem; } }
   @media only screen and (min-width: 1025px) {
     .layout-header {
       margin: 0 100px;
@@ -375,7 +458,7 @@ body {
       .layout-header .btn-menus {
         margin-top: 22px;
         background-image: url(../images/desktop/sprites.png);
-        background-position: -149px -58px;
+        background-position: 0px -128px;
         width: 41px;
         height: 26px; }
       .layout-header .logo-eagon {
@@ -383,7 +466,16 @@ body {
         background-image: url(../images/desktop/sprites.png);
         background-position: 0px 0px;
         width: 143px;
-        height: 30px; } }
+        height: 30px; }
+      .layout-header .navigation .list-menus {
+        margin-top: 80px;
+        padding: 0 15px; }
+        .layout-header .navigation .list-menus > li a {
+          font-size: 24px;
+          line-height: 50px; }
+      .layout-header .navigation .eagon-haus {
+        margin-top: 70px;
+        font-size: 1.125rem; } }
 
 /* contents */
 .layout-contents {
@@ -746,7 +838,7 @@ body {
     .info-section .btn-download {
       margin-top: -13px;
       background-image: url(../images/mobile/sprites.png);
-      background-position: -40px -55px;
+      background-position: -80px -55px;
       width: 26px;
       height: 26px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi) {

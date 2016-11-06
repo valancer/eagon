@@ -40,6 +40,7 @@ $(document).ready(function(e) {
 		timeout: 3000,
 		cache: true,
 		success: function(result, status, xhr) {
+			GNB.init(result);
 			main(result);
 		},
 		error: function(xhr, stauts, err) {
@@ -47,6 +48,49 @@ $(document).ready(function(e) {
 		}
 	});
 });
+
+var GNB = (function($) {
+	var scope,
+		$container,
+		$listMenus,
+		$btnMenus,
+		_data,
+		init = function(data) {
+			$container = $('.layout-header');
+			$listMenus = $container.find('.list-menus');
+			$btnMenus = $container.find('.btn-menus');
+			_data = data
+
+			initLayout();
+			initEvent();
+		};
+
+	function initLayout() {
+		var htmlListMenus = '<li><a href="/index.html">Product all</a></li>';
+		for( var i=0; i < _data.length; i++ ) {
+			var item = _data[i];
+			htmlListMenus += '<li><a href="/product_view.html?uid=' + item.uid + '">' + item.title + '</a></li>';
+		}
+		$listMenus.html(htmlListMenus);
+	}
+
+	function initEvent() {
+		$btnMenus.on('click', function(e) {
+			var state = $('body').attr('data-state');
+			if( state == '' || state == undefined ) {
+				$('body').attr('data-state', 'open');
+			} else {
+				$('body').attr('data-state', '');
+			}
+		});
+	}
+
+	return {
+		init: function(data) {
+			init(data);
+		}
+	};
+}(jQuery));
 
 
 var ProductList = (function($) {
@@ -84,7 +128,6 @@ var ProductList = (function($) {
 
 	return {
 		init: function(data) {
-			console.log(data);
 			init(data);
 		}
 	};
@@ -202,7 +245,6 @@ var ProductDetail = (function($) {
 
 	return {
 		init: function(data) {
-			console.log(data);
 			init(data);
 		}
 	};

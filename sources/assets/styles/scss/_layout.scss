@@ -1,12 +1,49 @@
 
 
-body { background-color: #fff; }
+body { overflow: auto; background-color: #fff;
+
+	// open
+	&[data-state=open] { overflow: hidden;
+		.layout-header { display: block; overflow: auto; position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: z("modal"); margin: 0; padding: 0 12px; height: auto; border-bottom: 0px; background-color: rgba(242, 242, 242, 0.95);
+			transition: background-color 0.3s ease-in-out;
+
+			.navigation { opacity: 1; visibility: visible; }
+			
+			@include mobile {
+				.btn-menus { @include retina-sprite($sm-btn-close-group); }
+			}
+
+			@include tablet { padding: 0 24px; }
+
+			@include desktop { padding: 0 100px;
+				.btn-menus { @include sprite($sd-btn-close); }
+			}
+		}
+	}
+}
 
 
 /* header */
 .layout-header { margin: 0 12px; border-bottom: 1px solid #000; background-color: #fff;
+	transition: background-color 0.3s ease-in-out;
+
 	.btn-menus { text-indent: -9999px; }
 	.logo-eagon { float: right; margin-top: 10px; text-indent: -9999px; }
+
+	.navigation { display: block; opacity: 0; visibility: hidden; text-align: center; padding-bottom: 20px; border-top: 1px solid #000;
+		transition: opacity 0.3s ease-in-out;
+
+		.navigation-title { display: none; }
+		.list-menus { display: inline-block; margin-top: 36px; padding: 0 10px;
+			> li { border-top: 1px solid #040404;
+				&:first-child { border-top: 0; }
+
+				a { display: block; font-size: 18px; font-weight: 400; color: #231f20; text-align: center; line-height: 29px; }
+			}
+		}
+		.eagon-haus { display: block; margin-top: 60px; font-family: $font-special-stack; font-size: 0.563rem; font-weight: 700; color: #231f20; letter-spacing: 0.3rem; text-align: center; }
+	}
+
 
 	@include mobile { height: 44px; 
 		.btn-menus { @include retina-sprite($sm-btn-menus-group); }
@@ -14,12 +51,27 @@ body { background-color: #fff; }
 	}
 
 	@include tablet { margin: 0 24px;
-
+		.navigation {
+			.list-menus {
+				> li {
+					a { font-size: 15px; line-height: 26px; }
+				}
+			}
+			.eagon-haus { margin-top: 35px; font-size: 0.750rem; }
+		}
 	}
 
 	@include desktop { margin: 0 100px; height: 66px;
 		.btn-menus { margin-top: 22px; @include sprite($sd-btn-menus); }
 		.logo-eagon { margin-top: 20px; @include sprite($sd-logo); }
+		.navigation {
+			.list-menus { margin-top: 80px; padding: 0 15px;
+				> li {
+					a { font-size: 24px; line-height: 50px; }
+				}
+			}
+			.eagon-haus { margin-top: 70px; font-size: 1.125rem; }
+		}
 	}
 }
 
