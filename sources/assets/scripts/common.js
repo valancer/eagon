@@ -69,7 +69,7 @@ var GNB = (function($) {
 		var htmlListMenus = '<li><a href="/index.html">Product all</a></li>';
 		for( var i=0; i < _data.length; i++ ) {
 			var item = _data[i];
-			htmlListMenus += '<li><a href="/product_view.html?uid=' + item.uid + '">' + item.title + '</a></li>';
+			htmlListMenus += '<li><a href="/product.html?uid=' + item.uid + '">' + item.title + '</a></li>';
 		}
 		$listMenus.html(htmlListMenus);
 	}
@@ -110,7 +110,7 @@ var ProductList = (function($) {
 		for( var i=0; i < _data.length; i++ ) {
 			var item = _data[i];
 			htmlProductList += '<li>';
-			htmlProductList += '	<a href="./product_view.html?uid=' + item.uid + '">';
+			htmlProductList += '	<a href="./product.html?uid=' + item.uid + '">';
 			htmlProductList += '		<figure>';
 			htmlProductList += '			<div class="thumb">';
 			htmlProductList += '				<img src="/assets/images/products/' + item.base + '/list.jpg" alt="' + item.title + '">';
@@ -170,10 +170,10 @@ var ProductDetail = (function($) {
 
 		// slider
 		var htmlSlider = "";
-		for( var i=0; i < _data.photos.length; i++ ) {
-			var url = _data.photos[i];
+		for( var i=0; i < _data.main.length; i++ ) {
+			var url = _data.main[i];
 			htmlSlider += '<div class="product-item">';
-			htmlSlider += '	<a href="#photos" class="btn-photos"><img src="' + url.mobile + '" data-responsimg-mobile="' + url.mobile + '" data-responsimg-desktop="' + url.desktop + '" alt="' + _data.title + '" class="responsive-image"></a>';
+			htmlSlider += '	<a href="./product_photos.html?uid=' + _data.uid + '"><img src="' + url.mobile + '" data-responsimg-mobile="' + url.mobile + '" data-responsimg-desktop="' + url.desktop + '" alt="' + _data.title + '" class="responsive-image"></a>';
 			htmlSlider += '</div>';
 		}
 		$sliderContainer.html(htmlSlider);
@@ -214,7 +214,9 @@ var ProductDetail = (function($) {
 		// download
 		$btnDownload.attr('href', _data.download);
 
-		// popup
+
+
+		// popup photos
 		var $popupTitle = $popupContainer.find('.title');
 		var $popupDescription = $popupContainer.find('.description');
 		$popupTitle.html(_data.title);
@@ -228,6 +230,7 @@ var ProductDetail = (function($) {
 			htmlPopupSlider += '</div>';
 		}
 		$popupSlider.html(htmlPopupSlider);
+		$popupSlider.css("marginTop", $popupContainer.find('.popup-header').height());
 	}
 
 	function initEvent() {
@@ -243,8 +246,7 @@ var ProductDetail = (function($) {
 			arrows: true,
 			dots: false,
 			infinite: false,
-			draggable: true,
-			adaptiveHeight: true,
+			draggable: false,
 			autoplay: true,
   			autoplaySpeed: 5000,
 			slidesToShow: 1,
@@ -254,43 +256,37 @@ var ProductDetail = (function($) {
 				{
 					breakpoint: 1024,
 					settings: {
+						draggable: true,
 						arrows: false
 					}
 				}
 			]
 		});
 
-		// popup
-		$('.btn-photos').magnificPopup({
-			type: 'inline',
-			alignTop: true,
-			overflowY: true,
-			fixedContentPos: true,
-			midClick: true,
-			preloader: true,
-			callbacks: {
-				open: function() {
-					$popupSlider.slick({
-						arrows: true,
-						dots: false,
-						infinite: false,
-						draggable: true,
-						autoplay: false,
-						slidesToShow: 1,
-						slidesToScroll: 1,
-						slide: '.popup-item',
-						responsive: [
-							{
-								breakpoint: 1024,
-								settings: {
-									arrows: false,
-									draggable: false
-								}
-							}
-						]
-					});
-				},
-			}
+		// popup photos
+		var $popupBtnClose = $popupContainer.find('.btn-close');
+		$popupBtnClose.on('click', function(e) {
+			window.history.back(-1);
+		});
+
+		$popupSlider.slick({
+			arrows: true,
+			dots: false,
+			infinite: false,
+			draggable: false,
+			autoplay: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			slide: '.popup-item',
+			responsive: [
+				{
+					breakpoint: 1024,
+					settings: {
+						arrows: false,
+						swipe: false
+					}
+				}
+			]
 		});
 	}
 
