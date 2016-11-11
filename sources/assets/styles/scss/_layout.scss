@@ -147,7 +147,7 @@ body { overflow: auto; background-color: #fff;
 	@include tablet {
 		.btn-close { right: 24px; @include retina-sprite($sm-btn-close-popup-group); }
 
-		.popup-header { padding: 0px 96px 24px 24px; background-color: #fff;
+		.popup-header { padding: 0px 96px 24px 24px; background-color: rgba(255, 255, 255, 0.9);
 			.title { font-size: 1.625rem; line-height: 68px; }
 			.description { font-size: 0.938rem; line-height: 1.400em; }
 		}

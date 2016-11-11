@@ -632,7 +632,7 @@ body {
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .layout-popup .popup-header {
       padding: 0px 96px 24px 24px;
-      background-color: #fff; }
+      background-color: rgba(255, 255, 255, 0.9); }
       .layout-popup .popup-header .title {
         font-size: 1.625rem;
         line-height: 68px; }
