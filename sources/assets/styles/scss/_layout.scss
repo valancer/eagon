@@ -41,18 +41,23 @@ body { overflow: auto; background-color: #fff;
 				a { display: block; font-family: $font-special-stack; font-size: 2.625rem; font-weight: 400; color: #231f20; text-align: center; line-height: 59px; }
 			}
 		}
-		.eagon-haus { display: block; margin-top: 60px; font-family: $font-special-stack; font-size: 0.813rem; font-weight: 700; color: #231f20; letter-spacing: 0.3rem; text-align: center; }
+		.eagon-haus { display: block; margin: 60px auto 0; text-indent: -9999px; }
 	}
-
 
 	@include mobile { height: 44px; 
 		.btn-menus { @include retina-sprite($sm-btn-menus-group); }
 		.logo-eagon { @include retina-sprite($sm-logo-group); }
 	}
 
+	@include phone {
+		.navigation {
+			.eagon-haus { @include retina-sprite($sm-logo-footer-group); }
+		}
+	}
+
 	@include tablet { margin: 0 24px;
 		.navigation {
-			.eagon-haus { margin-top: 240px; }
+			.eagon-haus { margin-top: 240px; @include retina-sprite($sm-logo-footer-tablet-group); }
 		}
 	}
 
@@ -65,7 +70,7 @@ body { overflow: auto; background-color: #fff;
 					a { line-height: 53px; }
 				}
 			}
-			.eagon-haus { margin-top: 70px; font-size: 0.750rem; }
+			.eagon-haus { margin-top: 70px; @include sprite($sd-logo-footer); }
 		}
 	}
 }
@@ -85,7 +90,7 @@ body { overflow: auto; background-color: #fff;
 
 /* footer */
 .layout-footer { overflow: hidden; padding: 12px 12px 69px; min-height: 200px; background-color: #f8f8f8; 
-	.eagon-haus { font-family: $font-special-stack; font-size: 0.750rem; font-weight: 700; color: #231f20; letter-spacing: 0.3rem; }
+	.eagon-haus { display: block; text-indent: -9999px; }
 	.contents { overflow: hidden; font-size: 0.625rem; font-weight: 700; color: #4f4e4e; line-height: 1.500em;
 		.description { margin-top: 11px; }
 		.list-local-business {
@@ -95,8 +100,12 @@ body { overflow: auto; background-color: #fff;
 		}
 	}
 
+	@include phone {
+		.eagon-haus { @include retina-sprite($sm-logo-footer-group); }
+	}
+
 	@include tablet { padding: 0 24px 29px 24px; min-height: 265px;
-		.eagon-haus { float: left; margin-top: 15px; font-size: 0.938rem; }
+		.eagon-haus { float: left; margin-top: 15px; @include retina-sprite($sm-logo-footer-tablet-group); }
 		.contents { float: right; margin-top: 0; width: 290px; font-size: 0.625rem; 
 			.description { margin-top: 17px; line-height: 1.400em; }
 			.list-local-business {
@@ -108,7 +117,7 @@ body { overflow: auto; background-color: #fff;
 
 	@include desktop { padding: 0;
 		.layout-footer-inner { overflow: hidden; margin: 0 auto; padding: 10px 100px 118px; max-width: $desktop-max-width; }
-		.eagon-haus { float: left; font-size: 1.500rem; }
+		.eagon-haus { float: left; @include sprite($sd-logo-footer); }
 		.contents { float: right; margin-top: 0px; width: 815px; font-size: 0.750rem;
 			.description { float: left; margin-top: 4px; width: 520px; line-height: 1.500em; }
 			.list-local-business { float: right; width: 250px;

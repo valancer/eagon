@@ -2,8 +2,8 @@
 	{
 		"uid": "0",
 		"base": "aws_70_h1_tt",
-		"title": "AWS 70 H1 TT",
-		"description": "고품격 알루미늄 시스템 창호로써 이건창호의 최다 판매 기록을 세운 최고급 명품창호입니다. 매립형 하드웨어를 사용하여 모던한 디자인과 세련미를 더했으며, 실내 컬러는 인테리어에 맞게, 실외 컬러는 건물 외관에 어울리게 연출이 가능하여 다양한 건축물에 적용할 수 있는 제품입니다.",
+		"title": "AWS 70 HI TT",
+		"description": "이건창호의 베스트셀러 제품으로 매립형 하드웨어는 모던한 디자인에 세련미를 더했습니다. 고 성능의 독일산 하드웨어는 제품의 안정성을 높여주며, 실내 컬러는 인테리어에 맞게, 실외 컬러는 건물 외관에 어울리게 연출이 가능하여 다양한 건축물에 적용할 수 있는 제품입니다.",
 		"main": [
 			{
 				"desktop": "/assets/images/products/aws_70_h1_tt/main01.jpg",
@@ -67,28 +67,28 @@
 		"features": [
 			{
 				"title": "소재 | Material",
-				"content": "알루미늄의 튼튼함과 우수한 정밀가공기술, 그리고 깔끔한 코너부위 마감이 되어 있습니다. 높은 단열성능을 가진 폴리써미드 단열바와 정밀하게 가공한 알루미늄을 특수제작된 기계로 일체화하여 강한 구조력과 높은 단열성능을 보입니다. 실내외 색상을 자유롭게 선택하여 인테리어는 물론 건물외관 파사드에 맞는 다양한 연출이 가능합니다.",
+				"content": "고급스러운 외관에 내구성까지 갖춘 알루미늄과 높은 단열성능을 가진 폴리써미드(Polythermid)단열바가 결합되어 제작되었습니다.",
 				"url": "/assets/images/products/aws_70_h1_tt/feature01.jpg"
 			},
 			{
 				"title": "기능 | Function",
-				"content": "커튼월과의 조합이 우수하며 뛰어난 환기 능력을 보여줍니다. 자동장치를 추가하여 자동 시스템을 구현 할 수 있습니다. 개폐를 위한 TURN과 환기를 위한 TILT기능을 동시에 제공합니다.",
+				"content": "커튼월과 조합이 우수한 제품이며, 뛰어난 환기성능을 발휘하는 제품입니다. 자동개폐장치(Tiptronic)를 추가하여 자동화 시스템을 구현할 수 있습니다.",
 				"url": "/assets/images/products/aws_70_h1_tt/feature02.jpg"
 			},
 			{
 				"title": "하드웨어 | Hardware",
-				"content": "매립형 하드웨어를 적용하여 깔끔하고 견고한 외관을 지닌 제품입니다. 내/외부 3중 가스켓 적용으로 기밀성능이 우수합니다. 독일산 하드웨어를 사용하여 튼튼하면서도 자연스러운 개폐가 가능합니다.",
+				"content": "매립형 하드웨어 적용하여 깔끔하고 견고한 외관을 지닌 제품입니다. 내외부 3중 가스켓 적용으로 단열과 기밀성능이 우수합니다.",
 				"url": "/assets/images/products/aws_70_h1_tt/feature03.jpg"
 			}
 		],
 		"specification": [
 			{
 				"title": "소재",
-				"content": "Aluminium"
+				"content": "Aluminum"
 			},
 			{
 				"title": "단열 성능",
-				"content": "0.996 W/m²ㆍK / (43mm 삼중로이유리 5CL+14Ar+5LE+14Ar+5LE)"
+				"content": "0.996 W/m²ㆍK"
 			},
 			{
 				"title": "기밀 성능",
@@ -132,7 +132,7 @@
 			},
 			{
 				"title": "표면처리",
-				"content": "P.V.D.F/Powder/Anodised"
+				"content": "P.V.D.F / Powder / Anodised"
 			},
 			{
 				"title": "색상",
@@ -140,16 +140,54 @@
 			},
 			{
 				"title": "기능 옵션",
-				"content": "착탈식 방충망"
+				"content": "착탈식 방충망 / 자동개폐장치(Tiptronic)"
 			}
 		],
-		"download": "http://www.naver.com/"
+		"download": "http://www.naver.com/",
+		"construction": [
+			{
+				"direction": "vertical",
+				"url": "/assets/images/products/aws_70_h1_tt/construction01.jpg"
+			},
+			{
+				"direction": "vertical",
+				"url": "/assets/images/products/aws_70_h1_tt/construction02.jpg"
+			},
+			{
+				"direction": "vertical",
+				"url": "/assets/images/products/aws_70_h1_tt/construction03.jpg"
+			},
+			{
+				"direction": "vertical",
+				"url": "/assets/images/products/aws_70_h1_tt/construction04.jpg"
+			},
+			{
+				"direction": "vertical",
+				"url": "/assets/images/products/aws_70_h1_tt/construction05.jpg"
+			},
+			{
+				"direction": "vertical",
+				"url": "/assets/images/products/aws_70_h1_tt/construction06.jpg"
+			},
+			{
+				"direction": "vertical",
+				"url": "/assets/images/products/aws_70_h1_tt/construction07.jpg"
+			},
+			{
+				"direction": "vertical",
+				"url": "/assets/images/products/aws_70_h1_tt/construction08.jpg"
+			},
+			{
+				"direction": "horizontal",
+				"url": "/assets/images/products/aws_70_h1_tt/construction09.jpg"
+			}
+		]
 	},
 	{
 		"uid": "1",
 		"base": "pws_82_tt",
 		"title": "PWS 82 TT",
-		"description": "독일 패시브하우스 인증을 획득한 PVC 시스템 창호입니다. 패시브하우스와 제로 에너지 하우스 건물에 요구되는 성능을 만족하는 PWS 82 TT는 3단 배수 시스템과 7개의 챔버 기술을 적용한 고성능 제품입니다. 기존 PVC 제품에 사용하는 스틸보강재 대신에 PVC 프로파일과 알루미늄 바가 일체화되어 창호의 무게가 줄어들은 물론 고강도의 구조 성능을 발휘합니다. 에너지 절약이 중요시 되는 고품질의 건축물에 적합한 창호입니다.",
+		"description": "독일 패시브하우스 인증을 획득한 초고단열 PVC 시스템창호입니다. 3단 배수 시스템과 7개의 다중 챔버 기술을 적용하여 뛰어난 열관류율과 기밀성능을 구현하였습니다. 에너지 절약을 중요시 하는 패시브하우스 건축물에 적합한 제품입니다.",
 		"main": [
 			{
 				"desktop": "/assets/images/products/pws_82_tt/main01.jpg",
@@ -209,17 +247,17 @@
 		"features": [
 			{
 				"title": "소재 | Material",
-				"content": "PVC의 낮은 열전도율, 알루미늄의 강한 구조성능을 프로파일에서 모두 해결하였습니다. PVC 프로파일 압출과 동시에 알루미늄이 삽입되어 기존 스틸보강재가 삽입된 PVC창에 비해 가벼우면서도 고강도의 구조성능을 지녔습니다. 다양한 색상을 적용할 수 있으며, PVC 프로파일에 메탈릭 질감을 구현 할 수 있는 포일링(Foiling) 공법을 적용하여 뛰어난 질감 표현과 함께 긁힘 성능도 강합니다.",
+				"content": "PVC 프로파일 압출과 동시에 알루미늄 보강재가 삽입되어 결합되는 특허기술이 적용되었습니다. 기존 스틸 보강재가 삽입된 PVC창에 비해 가벼우면서도 고강도의 구조력을 지닌 제품입니다. 또한, 고급 승용차의 마감 기술인 Automotive Finish가 적용이 되면 PVC에서도 메탈릭 질감을 구현할 수 있습니다.",
 				"url": "/assets/images/products/pws_82_tt/feature01.jpg"
 			},
 			{
 				"title": "기능 | Function",
-				"content": "개폐를 위한 TURN과 환기를 위한 TILT기능을 동시에 제공하며 다중잠금이 가능하며 방범성능이 우수합니다.",
+				"content": "개폐를 위한 Turn과 환기를 위한 Tilt 기능을 동시에 제공합니다. 또한, 독일 슈코사의 환기장치를 추가하여 쾌적한 실내환경을 구현할 수 있습니다.",
 				"url": "/assets/images/products/pws_82_tt/feature02.jpg"
 			},
 			{
 				"title": "하드웨어 | Hardware",
-				"content": "매립형 하드웨어를 적용하여 깔끔하고 견고한 외관을 지닌 제품입니다. 내/외부 3중 가스켓 적용으로 기밀성능이 우수합니다. 독일산 하드웨어를 사용하여 튼튼하면서도 자연스러운 개폐가 가능합니다.",
+				"content": "열교현상을 효과적으로 저감시키는 PVC전용 특수 하드웨어와 부자재 적용으로 단열과 기밀성능에 최적화된 시스템을 제공합니다.",
 				"url": "/assets/images/products/pws_82_tt/feature03.jpg"
 			}
 		],
@@ -230,7 +268,7 @@
 			},
 			{
 				"title": "단열 성능",
-				"content": "0.752 W/m²ㆍK / (49mm 삼중로이유리 5CL+16Ar+5CL+18Ar+5LE)"
+				"content": "0.752 W/m²ㆍK"
 			},
 			{
 				"title": "기밀 성능",
@@ -274,24 +312,34 @@
 			},
 			{
 				"title": "표면처리",
-				"content": "Decoration Sheet / TopAlu / Decorative foils / AutomotiveFinish"
+				"content": "Decoration Sheet / Top-Alu / Decorative foils / Automotive-Finish"
 			},
 			{
 				"title": "색상",
-				"content": "-"
+				"content": "백색 / 목무늬 시트 / 상담문의"
 			},
 			{
 				"title": "기능 옵션",
-				"content": "착탈식 방충망"
+				"content": "착탈식 방충망 / Automotive-Finish"
 			}
 		],
-		"download": "http://www.naver.com/"
+		"download": "http://www.naver.com/",
+		"construction": [
+			{
+				"direction": "horizontal",
+				"url": "/assets/images/products/pws_82_tt/construction01.jpg"
+			},
+			{
+				"direction": "horizontal",
+				"url": "/assets/images/products/pws_82_tt/construction02.jpg"
+			}
+		]
 	},
 	{
 		"uid": "2",
 		"base": "ads_90_si_de",
 		"title": "ADS 90 SI DE",
-		"description": "유럽의 트랜디한 디자인과 최고의 기술이 집약된 차세대 도어입니다. 건축물의 트렌드인 단열과 에너지 세이빙에 최적화되어 있습니다. ADS 90 SI DE는 고품질 알루미늄 판넬과 핸들을 일체화한 모던한 디자인 도어로써 건축물의 가치를 높일 수 있습니다. 독일 슈코사의 심플하고 스타일쉬한 Door Control System(DCS)을 적용하여 다양한 기능(지문인식/LED라이트/출입관리 등)을 추가하여 사용할 수 있습니다. ADS 90 SI DE는 우수한 디자인을 인정받은 제품으로 2012년 reddot, if, 그리고 design plus에서 디자인 상을 수상받았습니다.",
+		"description": "트랜디한 디자인과 최고의 기술이 집약된 차세대 도어입니다. ADS 90 SI DE는 고품질 알루미늄 판넬과 핸들을 일체화하여 모던한 디자인을 자랑합니다. 2012년에는 우수한 디자인을 인정받아 Red dot, IF, Design plus에서 디자인상을 수상한 제품입니다.",
 		"main": [
 			{
 				"desktop": "/assets/images/products/ads_90_si_de/main01.jpg",
@@ -351,17 +399,17 @@
 		"features": [
 			{
 				"title": "소재 | Material",
-				"content": "감각적인 디자인의 유럽식 시스템 도어 ADS 90 SI DE는 매우 정밀하게 가공한 알루미늄을 사용하여 견고하며 오랜시간에도 변형이 없습니다. 높은 단열성능을 가진 폴리써미드 단열바와 정밀하게 가공한 알루미늄을 특수제작된 기계로 일체화하여 강한 구조력과 높은 단열성능을 보입니다.",
+				"content": "고급스러운 외관에 내구성까지 갖춘 알루미늄과 높은 단열성능을 가진 폴리써미드(Polythermid)단열바가 결합되어 제작되었습니다.",
 				"url": "/assets/images/products/ads_90_si_de/feature01.jpg"
 			},
 			{
 				"title": "기능 | Function",
-				"content": "도어에 부착된 Door Control System (DCS)는 카메라와 마이크, 지문인식, 터치패드 등 다양한 기능을 제공하며, 선택에 따라 추가하여 사용할 수 있고 스마트 폰과 연결하여 손쉽게 관리할 수도 있습니다.",
+				"content": "도어에 부착된 Door Control System (DCS)은 카메라와 마이크, 지문인식, 터치패드 등 다양한 기능을 제공하며 사용자의 선택에 따라 추가할 수 있습니다. 또한, 스마트폰과 연결하여 손쉽게 관리할 수도 있습니다.",
 				"url": "/assets/images/products/ads_90_si_de/feature02.jpg"
 			},
 			{
 				"title": "하드웨어 | Hardware",
-				"content": "다중 잠금장치가 적용되어 탁월한 방범 기능을 제공하며 매립형 하드웨어로 완전 평면 외관을 지닌 제품입니다.",
+				"content": "매립형 하드웨어를 적용하여 깔끔하고 견고한 외관을 지닌 제품입니다. 한번의 핸들 조작으로 프레임 속 다중 잠금 장치가 구동되며, 전자 잠금 장치 및 방범 시스템과의 연동도 가능합니다.",
 				"url": "/assets/images/products/ads_90_si_de/feature03.jpg"
 			}
 		],
@@ -416,7 +464,7 @@
 			},
 			{
 				"title": "표면처리",
-				"content": "P.V.D.F/Powder/Anodised"
+				"content": "P.V.D.F / Powder / Anodised"
 			},
 			{
 				"title": "색상",
@@ -424,16 +472,17 @@
 			},
 			{
 				"title": "기능 옵션",
-				"content": "롤방충망"
+				"content": "카메라 / 마이크 / 지문인식 / 터치패드 / 스마트폰 연동"
 			}
 		],
-		"download": "http://www.naver.com/"
+		"download": "http://www.naver.com/",
+		"construction": []
 	},
 	{
 		"uid": "3",
 		"base": "ads_70_hi_tt",
-		"title": "ADS 70 HI TT",
-		"description": "알루미늄 소재의 단단함과 심플한 디자인으로 모던하며서도 고급스러운 공간 연출이 가능합니다.  유럽식 시스템 도어의 우수한 단열 성능(3등급)과 기밀성능(1등급)을 가지고 있습니다. 특수 Key Cylinder를 사용하여 키복제가 어려우며, 3개의 힌지로 보안이 더욱 강화되었습니다. 특히, AFT(손 끼임 방지 옵션) 기능이 있어 어린이들이 많이 다니는 장소와 안전이 요구되어 지는 장소에 적합한 도어입니다. 일반 도어와는 달리 43mm 3중유리를 사용하여 단열은 물론 방범까지 신경을 쓸 수 있는 시스템 도어로, 차음성능 역시 높아서 내부와 외부의 차음이 중요한 음악실이나 회의실에 주로 사용이 됩니다. 특히 세련된 핸들 디자인으로 자동 잠금장치를 사용하여 작은 힘에도 쉽게 열리며, 창문을 닫기만 해도 쉽게 밀착이 되어 닫혀집니다. 여성, 노약자, 아이들도 쉽게 열고 닫을 수 있습니다.",
+		"title": "ADS 70 HI",
+		"description": "독일산 고급 하드웨어와 43mm 3중유리를 사용하여 단열은 물론 방범까지 고려한 시스템 도어입니다. 이 제품은 높은 차음성능을 제공하여 외부의 소음차단이 중요한 곳에 적합하며, 자동 잠금장치를 사용한 핸들은 작은 힘에도 쉽게 열리고 도어를 닫을 때에는 쉽게 밀착된 후 닫혀 여성, 노약자, 아이들도 쉽게 열고 닫을 수 있습니다.",
 		"main": [
 			{
 				"desktop": "/assets/images/products/ads_70_hi_tt/main01.jpg",
@@ -493,17 +542,17 @@
 		"features": [
 			{
 				"title": "소재 | Material",
-				"content": "알루미늄의 튼튼함과 우수한 정밀가공기술, 그리고 깔끔한 코너부위 마감이 되어 있습니다. 높은 단열성능을 가진 폴리써미드 단열바와 정밀하게 가공한 알루미늄을 특수제작된 기계로 일체화하여 강한 구조력과 높은 단열성능을 보입니다.",
+				"content": "고급스러운 외관에 내구성까지 갖춘 알루미늄과 높은 단열성능을 가진 폴리써미드(Polythermid)단열바가 결합되어 제작되었습니다.",
 				"url": "/assets/images/products/ads_70_hi_tt/feature01.jpg"
 			},
 			{
 				"title": "기능 | Function",
-				"content": "개폐를 위한 Turn 기능을 제공하며, 유럽식 시스템 도어의 하드웨어와 특수 단열재 및 기밀재를 사용하여 우수한 성능을 자랑합니다. 독일의 방범등급(WK)을 만족하는 제품으로, 뛰어난 방범 성능을 자랑합니다.",
+				"content": "특수 Key-cylinder 적용으로 보안기능을 강화하여 안전한 생활공간을 제공합니다. 손끼임 방지 옵션(AFT, Anti-Finger Trap) 추가를 통해 어린이들의 손끼임 안전사고를 예방할 수 있습니다.",
 				"url": "/assets/images/products/ads_70_hi_tt/feature02.jpg"
 			},
 			{
 				"title": "하드웨어 | Hardware",
-				"content": "유럽 기준의 고성능 하드웨어가 장착되어 뛰어난 방범기능을 자랑합니다. 손 끼임 방지 옵션(AFT)을 제공하여 어린이들의 문 사이 손끼임을 방지합니다. 한 번의 핸들 조작으로 프레임 속 다중 잠금장치가 구동되며, 전자 잠금장치 및 방법 시스템과도 연동도 가능합니다.",
+				"content": "유럽 기준의 고성능 하드웨어가 장착되어 뛰어난 방범기능을 제공합니다. 돌출형힌지, 배럴힌지, 매립힌지 중 맞춤 디자인이 가능하며 디지털 도어락도 연동 가능합니다.",
 				"url": "/assets/images/products/ads_70_hi_tt/feature03.jpg"
 			}
 		],
@@ -514,7 +563,7 @@
 			},
 			{
 				"title": "단열 성능",
-				"content": "1.563 W/m²ㆍK / (24mm 일면로이유리 6CL+12Ar+6LE)"
+				"content": "1.563 W/m²ㆍK"
 			},
 			{
 				"title": "기밀 성능",
@@ -558,7 +607,7 @@
 			},
 			{
 				"title": "표면처리",
-				"content": "P.V.D.F/Powder/Anodised"
+				"content": "P.V.D.F / Powder / Anodised"
 			},
 			{
 				"title": "색상",
@@ -566,16 +615,38 @@
 			},
 			{
 				"title": "기능 옵션",
-				"content": "-"
+				"content": "힌지종류 / 디지털 도어락 / 손끼임 방지(AFT) / 장식바(Grid)"
 			}
 		],
-		"download": "http://www.naver.com/"
+		"download": "http://www.naver.com/",
+		"construction": [
+			{
+				"direction": "vertical",
+				"url": "/assets/images/products/ads_70_hi_tt/construction01.jpg"
+			},
+			{
+				"direction": "vertical",
+				"url": "/assets/images/products/ads_70_hi_tt/construction02.jpg"
+			},
+			{
+				"direction": "horizontal",
+				"url": "/assets/images/products/ads_70_hi_tt/construction03.jpg"
+			},
+			{
+				"direction": "horizontal",
+				"url": "/assets/images/products/ads_70_hi_tt/construction04.jpg"
+			},
+			{
+				"direction": "horizontal",
+				"url": "/assets/images/products/ads_70_hi_tt/construction05.jpg"
+			}
+		]
 	},
 	{
 		"uid": "4",
 		"base": "fws_35_pd",
 		"title": "FWS 35 PD",
-		"description": "그 어느 커튼월보다도 슬림한 제품 입니다. 기존 알루미늄 커튼월은 주로 60mm였으나, 혁신적인 기술을 적용한 FWS 35 PD는 타 커튼월에 비해 슬림하여 대면적의 유리/ 넓은 시야를 원하는 공간에 가장 효과적으로 사용하실 수 있습니다. FWS 35 PD은 패시브하우스에 요구하는 성능을 맞춘 뛰어난 단열성능을 자랑합니다.<br>PD : Panorama Design",
+		"description": "FWS 35 PD는 기존 60mm 알루미늄 커튼월 프레임에서 35mm로 혁신적으로 슬림하게 줄였습니다. 35mm 프레임에 패시브하우스에서 요구되는 단열성능을 가질 수 있도록 설계되었습니다. 대면적의 유리가 적용되는 공간이나 넓은 시야가 필요한 곳에 효과적으로 적용할 수 있는 커튼월 시스템입니다.",
 		"main": [
 			{
 				"desktop": "/assets/images/products/fws_35_pd/main01.jpg",
@@ -635,17 +706,17 @@
 		"features": [
 			{
 				"title": "소재 | Material",
-				"content": "매우 정밀하게 가공한 알루미늄과 혁신적인 신기술의 단열바를 적용하였습니다. 기본적인 요소들의 성능을 높인 요소기술로 구성된 고성능 고단열의 커튼월입니다.",
+				"content": "고급스러운 외관에 내구성까지 갖춘 알루미늄과 높은 단열성능을 가진 폴리써미드(Polythermid)단열바가 결합되어 제작되었습니다.",
 				"url": "/assets/images/products/fws_35_pd/feature01.jpg"
 			},
 			{
 				"title": "기능 | Function",
-				"content": "3단 배수 시스템으로 완벽한 수밀성능을 가졌으며 건축물의 성능에 맞도록 2가지 단열바를 적용할 수 있습니다. (high insulation & super insulation) 50mm 삼중유리까지 취부가능하여 다양한 유리 옵션을 적용할 수 있습니다.",
+				"content": "35mm 프레임안에 Turn&Tilt, 슬림라인 오픈창, 프로젝트창, 페럴러창을 결합할 수 있으며 최대 400kg의 유리를 취부할 수 있습니다.",
 				"url": "/assets/images/products/fws_35_pd/feature02.jpg"
 			},
 			{
 				"title": "하드웨어 | Hardware",
-				"content": "슬림한 커튼월에 무거운 유리를 취부 할 수있는 특수 glass supoort를 적용하여 최대 400kg유리를 지탱할 수 있습니다.",
+				"content": "다양한 개폐창을 호환할 수 있는 특수 하드웨어를 적용하였습니다. 향상된 단열바를 사용하여 패시브하우스에서 요구되는 성능을 갖추었습니다.",
 				"url": "/assets/images/products/fws_35_pd/feature03.jpg"
 			}
 		],
@@ -664,7 +735,7 @@
 			},
 			{
 				"title": "에너지효율등급",
-				"content": "1등급"
+				"content": "대상아님"
 			},
 			{
 				"title": "개폐방식",
@@ -680,7 +751,7 @@
 			},
 			{
 				"title": "최소사이즈 (W x H)",
-				"content": "60 x 60"
+				"content": "60mm x 60mm"
 			},
 			{
 				"title": "최대사이즈 (W x H)",
@@ -700,7 +771,7 @@
 			},
 			{
 				"title": "표면처리",
-				"content": "P.V.D.F/Powder/Anodised"
+				"content": "P.V.D.F / Powder / Anodised"
 			},
 			{
 				"title": "색상",
@@ -708,16 +779,17 @@
 			},
 			{
 				"title": "기능 옵션",
-				"content": "-"
+				"content": "개폐창 / 단열바 선택(High Insulation &amp; Super Insulation)"
 			}
 		],
-		"download": "http://www.naver.com/"
+		"download": "http://www.naver.com/",
+		"construction": []
 	},
 	{
 		"uid": "5",
 		"base": "ess_275_hls",
 		"title": "ESS 275 HLS",
-		"description": "알루미늄과 PVC의 장점을 모두 가지고 있는 제품으로 디자인과 성능을 한꺼번에 잡을 수 있는 고급 제품입니다. 내부 창문은 자동핸들을 사용하여 쉽게 열고 닫을 수 있으며, 외부 창문은 하부 고정에 상부는 알루미늄 시스템 창문으로 되어있어 기밀과 방음 성능이 뛰어납니다. 특히 창문 중앙의 수평바는 타사제품대비 슬림한 디자인으로 외부 풍경을 보는 시야의 간섭을 최소화 하여 뛰어난 조망을 자랑합니다. 외창은 독립적인 알루미늄 분할 L/S 시스템으로 구성되었는데, 커튼월에 적용하는 Insert방식을 사용하여 일반적인 커버 타입에 비해 높은 완성도와 심플한 입면을 구현하였습니다. 특히, 바람의 영향을 많이 받는 외창 수평부재에 스틸 보강재를 추가하여 뛰어난 구조적 성능을 가져 고층 빌딩에도 적용이 가능합니다.",
+		"description": "알루미늄과 PVC의 장점을 모두 가지고 있는 복합창호입니다. ESS 275 HLS의 내창(실내창)은 PVC를 사용하여 단열성능을 높였고, 외창(실외창)은 알루미늄을 사용하여 높은 내구성과 고급스러움을 구현했습니다. 2015년 '굿 디자인'에 선정된 제품입니다.",
 		"main": [
 			{
 				"desktop": "/assets/images/products/ess_275_hls/main01.jpg",
@@ -793,17 +865,17 @@
 		"features": [
 			{
 				"title": "소재 | Material",
-				"content": "알루미늄 소재의 단단함과 PVC 소재의 따뜻함을 융합한 멀티프레스 창문입니다. 알루미늄의 튼튼함과 우수한 정밀가공기술, 그리고 깔끔한 코너부위 마감이 되어 있습니다. 최고의 단열 성능을 위해 내부는 PVC Vent를 적용하였으며, 건물 외관의 세련된 미관의 디자인을 깨지 않기 위해 알루미늄 프로파일을 적용하여 심플한 입면을 구현하였습니다.",
+				"content": "고급스러운 외관에 내구성까지 갖춘 알루미늄과 뛰어난 단열능력을 갖춘 PVC 소재를 결합하여 제작한 제품입니다.",
 				"url": "/assets/images/products/ess_275_hls/feature01.jpg"
 			},
 			{
 				"title": "기능 | Function",
-				"content": "최고의 단열과 기밀, 차음 성능을 자랑하는 제품입니다. 내부는 오토락을 적용한 Sliding Vent가, 창 외부는 내부보다 강한 물림과 개폐를 위한 Lift & Sliding 기능을 제공합니다. 우수한 방범 성능을 자랑합니다.",
+				"content": "내부창은 PVC 소재로 오토락을 적용한 자동핸들을 사용하여 쉽게 열고 닫을 수 있습니다. 외부창은 알루미늄 소재로 Lift & Sliding 기능을 갖추어 뛰어난 기밀과 방음 성능을 제공합니다. 난간대 역할을 하는 외부창의 수평부재는 기존 난간일체형 창과 비교하여 폭을 30% 이상 줄여 넓은 시야를 확보하였습니다.",
 				"url": "/assets/images/products/ess_275_hls/feature02.jpg"
 			},
 			{
 				"title": "하드웨어 | Hardware",
-				"content": "넓은 시야와 외부 풍경을 확보할 수 있는 최적의 입면분할 알루미늄 수평바 삽입. 내부 슬라이딩 자동락 핸들 + 외부 L/S 수동락 핸들을 통한 단열과 기밀 성능 강화. 외창 수평부 높이 최소화 및 롤방충망 적용으로 넓은 시야를 확보.",
+				"content": "내부에는 자동락 핸들을, 외부에는 수동락 핸들이 적용되어 편리하게 열고 닫을 수 있습니다. 금속재질의 핸들은 견고하여 반영구적으로 사용할 수 있습니다.",
 				"url": "/assets/images/products/ess_275_hls/feature03.jpg"
 			}
 		],
@@ -814,7 +886,7 @@
 			},
 			{
 				"title": "단열 성능",
-				"content": "0.866 W/m²ㆍK<br> [외상](27.25mm 일면로이유리 5CL+12A+0.25진공+5LE) <br>[외하](33.01mm 일면로이유리 5CL+0.76F+5CL+12A+0.25진공+5LE)<br>[내창](22mm 복층유리 5CL+12A+5CL)"
+				"content": "0.866 W/m²ㆍK"
 			},
 			{
 				"title": "기밀 성능",
@@ -826,7 +898,7 @@
 			},
 			{
 				"title": "개폐방식",
-				"content": "Lift &amp; Sliding"
+				"content": "외창 : Lift &amp; Sliding / 내창 : Sliding"
 			},
 			{
 				"title": "개폐방향",
@@ -846,11 +918,11 @@
 			},
 			{
 				"title": "최대 유리취부 두께",
-				"content": "50mm"
+				"content": "외창 : 24mm / 내창 : 24mm"
 			},
 			{
 				"title": "단면 길이",
-				"content": "45mm"
+				"content": "275mm"
 			},
 			{
 				"title": "입면 넓이",
@@ -858,7 +930,7 @@
 			},
 			{
 				"title": "표면처리",
-				"content": "P.V.D.F/Powder/Anodised"
+				"content": "외창 : P.V.D.F / Powder / Anodised  내창 : Decoration Sheet"
 			},
 			{
 				"title": "색상",
@@ -866,16 +938,26 @@
 			},
 			{
 				"title": "기능 옵션",
-				"content": "-"
+				"content": "슬라이딩 방충망 / 롤방충망"
 			}
 		],
-		"download": "http://www.naver.com/"
+		"download": "http://www.naver.com/",
+		"construction": [
+			{
+				"direction": "horizontal",
+				"url": "/assets/images/products/ess_275_hls/construction01.jpg"
+			},
+			{
+				"direction": "horizontal",
+				"url": "/assets/images/products/ess_275_hls/construction02.jpg"
+			}
+		]
 	},
 	{
 		"uid": "6",
 		"base": "ess_190_ls",
 		"title": "ESS 190 LS",
-		"description": "알루미늄 소재의 단단함과 심플한 디자인으로 모던하며서도 고급스러운 공간 연출이 가능합니다.  유럽식 시스템 창호의 특수 하드웨어와 단열재 및 기밀재를 사용하여 우수한 단열 성능(2~1등급)과 기밀성능(1등급)을 가지고 있습니다. 독일의 방범등급(WK)을 획득한 제품으로 최고의 보안성능을 자랑합니다. 다중격벽 형식의 단열바를 알루미늄 프레임 내부에 적용하여 단열라인을 확보하였고, 알루미늄의 강한 물성을 바탕으로 해안가 및 고층건물에도 적합한 제품입니다. 300Kg을 견딜 수 있는 기어가 적용되어 크기 제한에서 자유로워 넓은 시야 확보를 원하시는 분들에게는 강력하게 추천해 드릴 수 있는 제품입니다. 특히 하부 레일의 높이가 낮아 통행에 불편함이 없어서 출입문 용도로도 사용이 가능합니다. 하드웨어는 모두 독일 슈코(SHUECO)사의 제품으로 국내 알루미늄 시스템 창호 제품 중 최고의 성능을 보유하고 있으며, 세련된 핸들 디자인으로 디자인적인 측면에서도 높은 선호도를 지닌 제품입니다.",
+		"description": "출입이 가능한 슬라이딩 시스템창호입니다. 대면적 유리 취부가 가능하여 넓은 시야를 확보할 수 있습니다. 뛰어난 구조성능으로 바람이 강한 해안가 및 고층건물에 적합한 제품입니다.",
 		"main": [
 			{
 				"desktop": "/assets/images/products/ess_190_ls/main01.jpg",
@@ -947,17 +1029,17 @@
 		"features": [
 			{
 				"title": "소재 | Material",
-				"content": "알루미늄의 튼튼함과 우수한 정밀가공기술, 그리고 깔끔한 코너부위 마감이 되어 있습니다. 높은 단열성능을 가진 폴리써미드 단열바와 정밀하게 가공한 알루미늄을 특수제작된 기계로 일체화하여 강한 구조력과 높은 단열성능을 보입니다. 실내외 색상을 자유롭게 선택하여 인테리어는 물론 건물외관 파사드에 맞는 다양한 연출이 가능합니다.",
+				"content": "고급스러운 외관에 내구성까지 갖춘 알루미늄과 높은 단열성능을 가진 폴리써미드(Polythermid)단열바가 결합되어 제작되었습니다.",
 				"url": "/assets/images/products/ess_190_ls/feature01.jpg"
 			},
 			{
 				"title": "기능 | Function",
-				"content": "넓은 시야와 사람의 출입이 가능한 Door용 시스템창호입니다. 개폐를 위한 Lift & Sliding 기능을 제공하고, 하부레일의 높이가 낮아 통행에 불편함이 없습니다. 독일의 방범등급(WK)을 만족하는 제품으로, 뛰어난 방범 성능을 자랑합니다.",
+				"content": "대면적 유리 취부가 가능하여 넓은 시야를 확보할 수 있습니다. 특히 하부레일의 높이가 낮아 통행에 불편함이 없고, 개폐를 위한 Lift & Sliding 기능이 포함된 제품입니다.",
 				"url": "/assets/images/products/ess_190_ls/feature02.jpg"
 			},
 			{
 				"title": "하드웨어 | Hardware",
-				"content": "코너 보강재와 글루를 사용한 조립방법으로 누수의 우려가 없고 강도가 뛰어납니다. 300kg 기어를 기본으로 적용하여 매우 큰 사이즈도 제작 가능합니다. 하부 레일의 높이가 낮아 통행에 불편합이 없어 출입문 용으로도 사용합니다.",
+				"content": "300Kg을 견딜 수 있는 하드웨어가 적용되어 대면적 개폐가 가능합니다. 구조성능이 뛰어나 바람이 강한 해안가 및 고층 건물에 적합한 제품입니다.",
 				"url": "/assets/images/products/ess_190_ls/feature03.jpg"
 			}
 		],
@@ -968,7 +1050,7 @@
 			},
 			{
 				"title": "단열 성능",
-				"content": "1.069 W/m²ㆍK /<br>(31.3mm 일면로이유리 5LE+16Ar+5CL+5CL+0.3진공+5LE)"
+				"content": "1.069 W/m²ㆍK"
 			},
 			{
 				"title": "기밀 성능",
@@ -1004,7 +1086,7 @@
 			},
 			{
 				"title": "단면 길이",
-				"content": "70mm"
+				"content": "190mm"
 			},
 			{
 				"title": "입면 넓이",
@@ -1012,7 +1094,7 @@
 			},
 			{
 				"title": "표면처리",
-				"content": "P.V.D.F/Powder/Anodised"
+				"content": "P.V.D.F / Powder / Anodised"
 			},
 			{
 				"title": "색상",
@@ -1020,16 +1102,42 @@
 			},
 			{
 				"title": "기능 옵션",
-				"content": "-"
+				"content": "커튼월과 호환가능"
 			}
 		],
-		"download": "http://www.naver.com/"
+		"download": "http://www.naver.com/",
+		"construction": [
+			{
+				"direction": "horizontal",
+				"url": "/assets/images/products/ess_190_ls/construction01.jpg"
+			},
+			{
+				"direction": "horizontal",
+				"url": "/assets/images/products/ess_190_ls/construction02.jpg"
+			},
+			{
+				"direction": "horizontal",
+				"url": "/assets/images/products/ess_190_ls/construction03.jpg"
+			},
+			{
+				"direction": "vertical",
+				"url": "/assets/images/products/ess_190_ls/construction04.jpg"
+			},
+			{
+				"direction": "vertical",
+				"url": "/assets/images/products/ess_190_ls/construction05.jpg"
+			},
+			{
+				"direction": "horizontal",
+				"url": "/assets/images/products/ess_190_ls/construction06.jpg"
+			}
+		]
 	},
 	{
 		"uid": "7",
 		"base": "ess_240_ps",
 		"title": "ESS 240 PS",
-		"description": "알루미늄 소재의 단단함과 눈에 보이지 않을 정도의 얇은 프레임으로 실외의 아름다운 풍경을 즐길 수 있는 공간 연출에 가장 적합한 창호 입니다. 유럽식 시스템 창호의 특수 하드웨어가 적용이 된 제품으로 뛰어난 view를 보여줌은 물론 단열성능과 기밀 및 방음 성능도 극대화 된 제품입니다. 특히, 일반 슬라이딩 제품과 차별화 된 작동방식으로 보안에도 매우 강합니다. 특히, 현재 나온 창호 제품 중 가장 슬림한 Vent(문짝) 프레임의 두께(37mm)를 가지고 있는 제품으로 외부 풍경을 큰 제약 없이 즐기실 수 있습니다. 매립시공을 할 경우에는 창호 프레임 자체를 벽체에 숨길수가 있어 눈으로 보았을 때, 유리가 벽과 이어져 있는 듯한 느낌을 받으실 수 있습니다. 슬림한 디자인과 미니멀한 마감으로 노출을 최소화 한 제품입니다.",
+		"description": "슬림한 디자인과 미니멀한 마감으로 프레임 노출을 최소화 한 제품입니다. 알루미늄 소재의 단단함과 눈에 보이지 않을 정도의 얇은 프레임으로 실외의 아름다운 풍경을 즐길 수 있는 공간 연출에 가장 적합한 창호 입니다.",
 		"main": [
 			{
 				"desktop": "/assets/images/products/ess_240_ps/main01.jpg",
@@ -1101,17 +1209,17 @@
 		"features": [
 			{
 				"title": "소재 | Material",
-				"content": "알루미늄의 튼튼함과 우수한 정밀가공기술, 그리고 깔끔한 코너부위 마감이 되어 있습니다. 높은 단열성능을 가진 폴리써미드 단열바와 정밀하게 가공한 알루미늄을 특수제작된 기계로 일체화하여 강한 구조력과 높은 단열성능을 보입니다. 실내외 색상을 자유롭게 선택하여 인테리어는 물론 건물외관 파사드에 맞는 다양한 연출이 가능합니다.",
+				"content": "고급스러운 외관에 내구성까지 갖춘 알루미늄과 높은 단열성능을 가진 폴리써미드(Polythermid)단열바가 결합되어 제작되었습니다.",
 				"url": "/assets/images/products/ess_240_ps/feature01.jpg"
 			},
 			{
 				"title": "기능 | Function",
-				"content": "최고의 기밀성능과 가장 넓은 View를 제공할 수 있는 제품입니다. 개폐를 위한 Parallel & Sliding 기능을 제공하며, 우수한 방범 성능을 자랑합니다.<br>(Parallel Sliding : 4면 밀착 잠금 방식)",
+				"content": "프레임이 벽체에 매립이 가능하여 37mm의 프레임만 노출됩니다. Sliding 개폐이므로 출입에 자유롭습니다.",
 				"url": "/assets/images/products/ess_240_ps/feature02.jpg"
 			},
 			{
 				"title": "하드웨어 | Hardware",
-				"content": "가장 넓은 시야와 외부 풍경을 확보할 수 있는 입면부가 가장 얇은 알루미늄 시스템창호입니다. 독일 DIN 규정 1등급의 하드웨어를 적용하여 단열성과 기밀, 방음 성능을 극대화였습니다. 창을 잠글 때, 4면을 밀착하여 개폐가 가능한 유럽 Roto사의 하드웨어를 사용하였고, 세로 형태로 달려 있는 핸들은 시야를 가리지 않아 넓은 View를 제공받을 수 있습니다.",
+				"content": "4면 밀착 잠금 방식인 Parallel & Sliding 하드웨어를 제공하여 단열과 기밀성능이 우수하며 뛰어난 방범 성능을 자랑합니다.",
 				"url": "/assets/images/products/ess_240_ps/feature03.jpg"
 			}
 		],
@@ -1122,7 +1230,7 @@
 			},
 			{
 				"title": "단열 성능",
-				"content": "1.306 W/m²ㆍK<br>(43mm 삼중로이유리 5DLE+14Ar+5CL+14Ar+5DLE)"
+				"content": "1.306 W/m²ㆍK"
 			},
 			{
 				"title": "기밀 성능",
@@ -1158,7 +1266,7 @@
 			},
 			{
 				"title": "단면 길이",
-				"content": "100mm"
+				"content": "240mm"
 			},
 			{
 				"title": "입면 넓이",
@@ -1166,7 +1274,7 @@
 			},
 			{
 				"title": "표면처리",
-				"content": "P.V.D.F/Powder/Anodised"
+				"content": "P.V.D.F / Powder / Anodised"
 			},
 			{
 				"title": "색상",
@@ -1174,9 +1282,15 @@
 			},
 			{
 				"title": "기능 옵션",
-				"content": "-"
+				"content": "매립 시공"
 			}
 		],
-		"download": "http://www.naver.com/"
+		"download": "http://www.naver.com/",
+		"construction": [
+			{
+				"direction": "vertical",
+				"url": "/assets/images/products/ess_240_ps/construction01.jpg"
+			}
+		]
 	}
 ]

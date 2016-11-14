@@ -124,7 +124,7 @@
 
 
 .info-section { overflow: hidden; margin-top: 14px; border-top: 1px solid #4f4e4e;
-	+ .info-section { margin-top: 28px; margin-bottom: 70px; }
+	&:last-child { margin-top: 28px; margin-bottom: 70px; }
 
 	.info-title { margin-top: 6px; font-size: 0.750rem; font-weight: 700; color: #231f20; }
 	.info-spec { margin-top: 15px; width: 100%;
@@ -139,12 +139,24 @@
 		.r { font-weight: 800; text-align: right; }
 	}
 	.btn-download { display: block; float: right; text-indent: -9999px; }
+	.btn-toggle { display: block; float: right; text-indent: -9999px; transform: rotateX( 0deg );
+		transition: max-height 0.3s ease-in-out; 
+
+		&[data-state=open] { transform: rotateX( 180deg );
+			+ .list-construction { max-height: 20000px; transition: max-height 0.3s ease-in-out; }
+		}
+	}
+
+	.list-construction { overflow: hidden; clear: both; max-height: 0px;
+		> li { padding-top: 14px; }
+	}
 
 	@include phone {
 		.btn-download { margin-top: -13px; @include retina-sprite($sm-btn-download-group); }
+		.btn-toggle { margin-top: -13px; @include retina-sprite($sm-btn-download-group); }
 	}
 	@include tablet { margin-top: 19px;
-		+ .info-section { margin-top: 40px; margin-bottom: 120px; }
+		&:last-child { margin-top: 40px; margin-bottom: 120px; }
 
 		.info-title { margin-top: 3px; font-size: 1.063rem; }
 		.info-spec { float: right; margin-top: 28px; width: calc(100% - 18.888888888888889%);
@@ -158,9 +170,19 @@
 		}
 
 		.btn-download { margin-top: -18px; margin-right: 8px; @include retina-sprite($sm-btn-download-tablet-group); }
+		.btn-toggle { margin-top: -18px; margin-right: 8px; @include retina-sprite($sm-btn-download-tablet-group); }
+
+		.list-construction { overflow: hidden; float: right; width: calc(100% - 18.888888888888889%);
+			> li { box-sizing: border-box; padding-top: 20px;
+				&.vertical { float: left; padding-right: 10px; width: 50%;
+					&:nth-child(even) { padding-right: 0px; padding-left: 10px; }
+				}
+				&.horizontal { clear: both; }
+			}
+		}
 	}
 	@include desktop { margin-top: 30px;
-		+ .info-section { margin-top: 62px; margin-bottom: 186px; }
+		&:last-child { margin-top: 62px; margin-bottom: 186px; }
 
 		.info-title { margin-top: 11px; font-size: 1.500rem; }
 		.info-spec { float: right; margin-top: 53px; width: calc(100% - 18.888888888888889%);
@@ -174,5 +196,15 @@
 		}
 
 		.btn-download { margin-top: -25px; margin-right: 8px; @include sprite($sd-btn-download); }
+		.btn-toggle { margin-top: -25px; margin-right: 8px; @include sprite($sd-btn-download); }
+
+		.list-construction { overflow: hidden; float: right; width: calc(100% - 18.888888888888889%);
+			> li { box-sizing: border-box; padding-top: 34px;
+				&.vertical { float: left; padding-right: 17px; width: 50%;
+					&:nth-child(even) { padding-right: 0px; padding-left: 17px; }
+				}
+				&.horizontal { clear: both; }
+			}
+		}
 	}
 }

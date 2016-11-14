@@ -142,6 +142,8 @@ var ProductDetail = (function($) {
 		$listFeatures,
 		$infoSpec,
 		$btnDownload,
+		$btnToggle,
+		$listConstruction,
 		$sliderContainer,
 		$popupContainer,
 		$popupSlider,
@@ -152,6 +154,8 @@ var ProductDetail = (function($) {
 			$listFeatures = $container.find('.list-features');
 			$infoSpec = $container.find('.info-spec tbody');
 			$btnDownload = $container.find('.btn-download');
+			$btnToggle = $container.find('.btn-toggle');
+			$listConstruction = $container.find('.list-construction');
 			$sliderContainer = $container.find('.product-slider');
 			$popupContainer = $container.find('.layout-popup');
 			$popupSlider = $popupContainer.find('.popup-slider');
@@ -214,6 +218,13 @@ var ProductDetail = (function($) {
 		// download
 		$btnDownload.attr('href', _data.download);
 
+		// construction
+		var htmlConstructionList = "";
+		for( var i=0; i < _data.construction.length; i++ ) {
+			var item = _data.construction[i];
+			htmlConstructionList += '<li class="' + item.direction + '"><img src="' + item.url + '" alt="시공 이미지"></li>';
+		}
+		$listConstruction.html(htmlConstructionList);
 
 
 		// popup photos
@@ -261,6 +272,18 @@ var ProductDetail = (function($) {
 					}
 				}
 			]
+		});
+
+		// construction toggle
+		$btnToggle.on('click', function(e) {
+			var $list = $(this).find('+ .list-construction');
+
+			var state = $(this).attr('data-state');
+			if( state == '' || state == undefined ) {
+				$(this).attr('data-state', 'open');
+			} else {
+				$(this).attr('data-state', '');
+			}
 		});
 
 		// popup photos
