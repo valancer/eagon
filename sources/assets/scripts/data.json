@@ -88,7 +88,7 @@
 			},
 			{
 				"title": "단열 성능",
-				"content": "0.996 W/m²ㆍK"
+				"content": "0.996 W/m²ㆍK  (43mm 삼중로이유리 5CL+14Ar+5LE+14Ar+5LE)"
 			},
 			{
 				"title": "기밀 성능",
@@ -268,7 +268,7 @@
 			},
 			{
 				"title": "단열 성능",
-				"content": "0.752 W/m²ㆍK"
+				"content": "0.752 W/m²ㆍK (49mm 삼중로이유리 5CL+16Ar+5CL+18Ar+5LE)"
 			},
 			{
 				"title": "기밀 성능",
@@ -563,7 +563,7 @@
 			},
 			{
 				"title": "단열 성능",
-				"content": "1.563 W/m²ㆍK"
+				"content": "1.563 W/m²ㆍK (24mm 일면로이유리 6CL+12Ar+6LE)"
 			},
 			{
 				"title": "기밀 성능",
@@ -886,7 +886,7 @@
 			},
 			{
 				"title": "단열 성능",
-				"content": "0.866 W/m²ㆍK"
+				"content": "0.866 W/m²ㆍK<br>[외상](27.25mm 일면로이유리 5CL+12A+0.25진공+5LE)<br>[외하](33.01mm 일면로이유리 5CL+0.76F+5CL+12A+0.25진공+5LE)<br>[내창](22mm 복층유리 5CL+12A+5CL)"
 			},
 			{
 				"title": "기밀 성능",
@@ -1050,7 +1050,7 @@
 			},
 			{
 				"title": "단열 성능",
-				"content": "1.069 W/m²ㆍK"
+				"content": "1.069 W/m²ㆍK<br>(31.3mm 일면로이유리 5LE+16Ar+5CL+5CL+0.3진공+5LE)"
 			},
 			{
 				"title": "기밀 성능",
@@ -1230,7 +1230,7 @@
 			},
 			{
 				"title": "단열 성능",
-				"content": "1.306 W/m²ㆍK"
+				"content": "1.306 W/m²ㆍK (43mm 삼중로이유리 5DLE+14Ar+5CL+14Ar+5DLE)"
 			},
 			{
 				"title": "기밀 성능",
