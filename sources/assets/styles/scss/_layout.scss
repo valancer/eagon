@@ -38,7 +38,7 @@ body { overflow: auto; background-color: #fff;
 			> li { padding: 0 0px; border-top: 1px solid #4f4e4e;
 				&:first-child { border-top: 0; }
 
-				a { display: block; font-family: $font-special-stack; font-size: 2.625rem; font-weight: 400; color: #231f20; text-align: center; line-height: 59px; }
+				a { display: block; font-family: $font-special-stack; font-size: 1.375rem; font-weight: 400; color: #231f20; text-align: center; line-height: 45px; }
 			}
 		}
 		.eagon-haus { display: block; margin: 60px auto 0; text-indent: -9999px; }
@@ -51,13 +51,15 @@ body { overflow: auto; background-color: #fff;
 
 	@include phone {
 		.navigation {
+			.list-menus { width: 95%; }
 			.eagon-haus { @include retina-sprite($sm-logo-footer-group); }
 		}
 	}
 
 	@include tablet { margin: 0 24px;
 		.navigation {
-			.eagon-haus { margin-top: 240px; @include retina-sprite($sm-logo-footer-tablet-group); }
+			.list-menus { width: 165px; }
+			.eagon-haus { margin-top: 20px; @include retina-sprite($sm-logo-footer-tablet-group); }
 		}
 	}
 
@@ -66,9 +68,7 @@ body { overflow: auto; background-color: #fff;
 		.logo-eagon { margin-top: 20px; @include sprite($sd-logo); }
 		.navigation {
 			.list-menus { margin-top: 80px;
-				> li { padding: 0 30px;
-					a { line-height: 53px; }
-				}
+				> li { padding: 0 30px; }
 			}
 			.eagon-haus { margin-top: 70px; @include sprite($sd-logo-footer); }
 		}

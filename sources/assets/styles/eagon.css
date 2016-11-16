@@ -408,11 +408,11 @@ body {
         .layout-header .navigation .list-menus > li a {
           display: block;
           font-family: Arial, "Nanum Gothic", "Malgun Gothic", Gulim, Dotum, sans-serif;
-          font-size: 2.625rem;
+          font-size: 1.375rem;
           font-weight: 400;
           color: #231f20;
           text-align: center;
-          line-height: 59px; }
+          line-height: 45px; }
     .layout-header .navigation .eagon-haus {
       display: block;
       margin: 60px auto 0;
@@ -440,6 +440,8 @@ body {
         background-image: url(../images/mobile/sprites@2x.png);
         background-size: 148px 131px; } }
   @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .layout-header .navigation .list-menus {
+      width: 95%; }
     .layout-header .navigation .eagon-haus {
       background-image: url(../images/mobile/sprites.png);
       background-position: -80px -55px;
@@ -452,8 +454,10 @@ body {
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .layout-header {
       margin: 0 24px; }
+      .layout-header .navigation .list-menus {
+        width: 165px; }
       .layout-header .navigation .eagon-haus {
-        margin-top: 240px;
+        margin-top: 20px;
         background-image: url(../images/mobile/sprites.png);
         background-position: -55px -26px;
         width: 86px;
@@ -482,8 +486,6 @@ body {
         margin-top: 80px; }
         .layout-header .navigation .list-menus > li {
           padding: 0 30px; }
-          .layout-header .navigation .list-menus > li a {
-            line-height: 53px; }
       .layout-header .navigation .eagon-haus {
         margin-top: 70px;
         background-image: url(../images/desktop/sprites.png);
